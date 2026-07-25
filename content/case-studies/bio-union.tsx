@@ -3,7 +3,7 @@ import { MediaFigure } from "@/components/case-study/media-figure";
 export function BioUnionCaseStudy() {
   return (
     <article className="case-study-content">
-      <div className="container-narrow section">
+      <div className="container section">
         <h2>Context and problem</h2>
         <p>
           Between 2018 and 2020, the wearable technology market was dominated by wrist-based fitness trackers. However, athletes and healthcare professionals needed higher-fidelity physiological data that a wrist sensor simply couldn&apos;t provide consistently. 
@@ -31,7 +31,7 @@ export function BioUnionCaseStudy() {
         disclosure="AI-assisted concept visualization created in 2026 based on Jacky's original design direction and archived materials."
       />
 
-      <div className="container-narrow section">
+      <div className="container section">
         <h2>Selected design decisions</h2>
         
         <h3>1. Invisible Technology</h3>
@@ -55,7 +55,7 @@ export function BioUnionCaseStudy() {
         disclosure="Interface visualization recreated from archived concepts and development notes."
       />
 
-      <div className="container-narrow section">
+      <div className="container section">
         <h2>Outcome and reflection</h2>
         <p>
           Bio Union successfully developed functional prototypes and secured initial interest from specialized athletic programs. However, the complexities of scaling smart textile manufacturing ultimately led us to wind down the venture in 2020.

@@ -3,7 +3,7 @@ import { MediaFigure } from "@/components/case-study/media-figure";
 export function PaviqoCaseStudy() {
   return (
     <article className="case-study-content">
-      <div className="container-narrow section">
+      <div className="container section">
         <h2>Context and problem</h2>
         <p>
           Automotive dealerships lose a significant percentage of potential sales simply due to lead leakage. When inquiries arrive outside of business hours, or when sales teams are overwhelmed, leads go cold. Traditional CRM systems are passive&mdash;they require manual data entry and follow-up, which often doesn&apos;t happen fast enough.
@@ -31,7 +31,7 @@ export function PaviqoCaseStudy() {
         disclosure="AI-assisted concept visualization created in 2026 and based on Jacky's design direction."
       />
 
-      <div className="container-narrow section">
+      <div className="container section">
         <h2>Selected design decisions</h2>
         
         <h3>1. The Handoff Protocol</h3>
@@ -54,7 +54,7 @@ export function PaviqoCaseStudy() {
         caption="Detailed lead view showing the conversation history and the seamless handoff point to human staff."
       />
 
-      <div className="container-narrow section">
+      <div className="container section">
         <h2>Outcome and status</h2>
         <p>
           Paviqo is currently in active development. We are testing the conversational models with pilot dealerships and refining the dashboard based on real-world usage patterns. The early feedback indicates that the AI qualification workflows significantly reduce the burden on sales teams during peak hours.

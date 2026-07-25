@@ -3,7 +3,7 @@ import { MediaFigure } from "@/components/case-study/media-figure";
 export function ArtpressoCaseStudy() {
   return (
     <article className="case-study-content">
-      <div className="container-narrow section">
+      <div className="container section">
         <h2>Context and problem</h2>
         <p>
           Independent artists face a recurring challenge: pricing their work consistently and confidently. While large galleries have established appraisal models, individual creators often rely on guesswork, comparing themselves to peers without factoring in their actual material costs, time, or career stage.
@@ -27,7 +27,7 @@ export function ArtpressoCaseStudy() {
         caption="The landing experience focuses immediately on the core value proposition: confident pricing."
       />
 
-      <div className="container-narrow section">
+      <div className="container section">
         <h2>Selected design decisions</h2>
         
         <h3>1. The Guided Calculator</h3>
@@ -50,7 +50,7 @@ export function ArtpressoCaseStudy() {
         caption="The results panel breaks down the calculation, ensuring artists understand and can defend their pricing."
       />
 
-      <div className="container-narrow section">
+      <div className="container section">
         <h2>Outcome and reflection</h2>
         <p>
           Artpresso launched successfully as a live tool for creative professionals. It immediately found an audience among emerging artists looking for a baseline pricing framework.

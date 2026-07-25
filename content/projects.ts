@@ -87,7 +87,7 @@ export const projects: Project[] = [
     roles: ["Product Designer", "Product Strategist"],
     collaborators: [],
     heroImage: {
-      src: "/images/projects/paviqo/paviqo-hero.jpg",
+      src: "/images/projects/paviqo/paviqo_hero_screenshot.jpg",
       alt: "Paviqo AI-powered automotive lead management dashboard showing a lead pipeline with qualification stages",
       width: 1400,
       height: 900,
@@ -133,7 +133,7 @@ export const projects: Project[] = [
     roles: ["Co-founder", "Product Designer", "Creative Director"],
     collaborators: [],
     heroImage: {
-      src: "/images/projects/bio-union/bio-union-hero.jpg",
+      src: "/images/projects/bio-union/bio-union_hero_screenshot.png",
       alt: "Close-up of a Bio Union smart garment showing embedded sensor threads in dark athletic fabric",
       width: 1400,
       height: 900,
@@ -178,7 +178,7 @@ export const projects: Project[] = [
     roles: ["Product Designer", "Founder"],
     collaborators: [],
     heroImage: {
-      src: "/images/projects/artpresso/artpresso-hero.jpg",
+      src: "/images/projects/artpresso/artpresso_hero_screenshot.png",
       alt: "Artpresso artwork pricing tool shown on a tablet, displaying a pricing calculator with fields for artwork dimensions, materials, and a calculated result",
       width: 1400,
       height: 900,
