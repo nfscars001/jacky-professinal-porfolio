@@ -48,7 +48,7 @@ export default async function CaseStudyPage(props: Props) {
   switch (slug) {
     case "artpresso":
       problem = "Independent artists needed a consistent, transparent tool to price their artwork without guesswork.";
-      duration = "3 months (2024)";
+      duration = "3 months (2025)";
       ContentComponent = ArtpressoCaseStudy;
       break;
     case "bio-union":
@@ -58,7 +58,7 @@ export default async function CaseStudyPage(props: Props) {
       break;
     case "paviqo":
       problem = "Automotive dealerships were losing sales due to lead leakage outside business hours or during high volume periods.";
-      duration = "Ongoing (2024–2025)";
+      duration = "Ongoing (2026)";
       ContentComponent = PaviqoCaseStudy;
       break;
     default:

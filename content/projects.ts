@@ -20,6 +20,7 @@ export type AssetProvenance =
 export type ProjectStatus =
   | "live"
   | "in-development"
+  | "open-beta"
   | "previous-venture"
   | "archive";
 
@@ -77,8 +78,8 @@ export const projects: Project[] = [
       "An AI-powered lead conversion and recovery platform for automotive dealerships. Paviqo helps dealerships capture, qualify, and follow up with leads through AI-assisted workflows and multilingual support.",
     cardStatement:
       "Reducing lead leakage for automotive dealerships with AI-powered qualification and follow-up.",
-    year: "2024–2025",
-    status: "in-development",
+    year: "2026",
+    status: "open-beta",
     featured: true,
     featuredOrder: 1,
     categories: ["digital-products", "ai-automation"],
@@ -133,7 +134,7 @@ export const projects: Project[] = [
     roles: ["Co-founder", "Product Designer", "Creative Director"],
     collaborators: [],
     heroImage: {
-      src: "/images/projects/bio-union/bio-union_hero_screenshot.png",
+      src: "/images/projects/bio-union/bio-union-hero.jpg",
       alt: "Close-up of a Bio Union smart garment showing embedded sensor threads in dark athletic fabric",
       width: 1400,
       height: 900,
@@ -163,7 +164,7 @@ export const projects: Project[] = [
       "A practical artwork-pricing tool for independent artists and creative professionals. Artpresso simplifies a multi-variable pricing challenge into a clear, guided calculation workflow.",
     cardStatement:
       "Helping independent artists price their work with confidence through a clear, guided tool.",
-    year: "2024",
+    year: "2025",
     status: "live",
     featured: true,
     featuredOrder: 3,
