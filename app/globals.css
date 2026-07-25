@@ -1,0 +1,187 @@
+/* =============================================================================
+   JACKY HO PORTFOLIO — GLOBAL STYLES
+   Design tokens · Typography scale · Motion · Base resets
+   No component-level styles live here.
+   ============================================================================= */
+
+@import "tailwindcss";
+
+/* =============================================================================
+   1. DESIGN TOKENS — Editorial Pink colorway (§12.1)
+   ============================================================================= */
+:root {
+  /* Colour */
+  --color-canvas: #f7f4f1;
+  --color-surface: #ffffff;
+  --color-ink: #171417;
+  --color-muted: #675f67;
+  --color-line: #dcd4da;
+  --color-accent: #d81b78;
+  --color-accent-hover: #b51463;
+  --color-accent-soft: #f8d7e8;
+  --color-violet: #6657d9;
+  --color-dark-panel: #19151b;
+  --color-on-dark: #fcf8fb;
+  --color-focus: #6b4eff;
+
+  /* Fluid type scale (§13) */
+  --step-hero: clamp(3rem, 7vw, 6.75rem);
+  --step-h1: clamp(2.75rem, 5vw, 5rem);
+  --step-h2: clamp(2rem, 3.5vw, 3.5rem);
+  --step-h3: clamp(1.35rem, 2vw, 2rem);
+  --step-lead: clamp(1.125rem, 1.5vw, 1.375rem);
+  --step-body: 1rem;
+  --step-small: 0.875rem;
+  --step-label: 0.75rem;
+
+  /* Spacing base (8 px) */
+  --space-1: 0.25rem;   /* 4px  */
+  --space-2: 0.5rem;    /* 8px  */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-28: 7rem;     /* 112px */
+  --space-36: 9rem;     /* 144px */
+
+  /* Layout */
+  --max-width: 1280px;
+  --reading-width: 720px;
+  --gutter-desktop: clamp(2.5rem, 5vw, 4rem);
+  --gutter-tablet: 1.5rem;
+  --gutter-mobile: 1rem;
+
+  /* Section spacing */
+  --section-gap-desktop: clamp(6rem, 10vw, 9rem);
+  --section-gap-tablet: clamp(4rem, 8vw, 5.5rem);
+  --section-gap-mobile: clamp(3rem, 6vw, 4.5rem);
+
+  /* Shape */
+  --radius-card: 14px;
+  --radius-sm: 9px;
+  --radius-tag: 6px;
+
+  /* Transitions */
+  --transition-base: 200ms ease;
+  --transition-card: 240ms ease;
+  --transition-menu: 260ms ease;
+
+  /* Focus ring */
+  --focus-ring: 0 0 0 3px var(--color-focus);
+}
+
+/* =============================================================================
+   2. BASE RESETS
+   ============================================================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-geist), system-ui, sans-serif;
+  font-size: var(--step-body);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =============================================================================
+   3. FOCUS STYLES (WCAG 2.2 AA — §16)
+   ============================================================================= */
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* =============================================================================
+   4. TYPOGRAPHY UTILITIES
+   ============================================================================= */
+.font-display {
+  font-family: var(--font-syne), Georgia, serif;
+}
+
+.font-mono {
+  font-family: var(--font-space-mono), "Courier New", monospace;
+}
+
+.text-hero   { font-size: var(--step-hero); }
+.text-h1     { font-size: var(--step-h1); }
+.text-h2     { font-size: var(--step-h2); }
+.text-h3     { font-size: var(--step-h3); }
+.text-lead   { font-size: var(--step-lead); }
+.text-body   { font-size: var(--step-body); }
+.text-small  { font-size: var(--step-small); }
+.text-label  { font-size: var(--step-label); }
+
+/* =============================================================================
+   5. LAYOUT UTILITIES
+   ============================================================================= */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--gutter-desktop);
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding-inline: var(--gutter-tablet);
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-inline: var(--gutter-mobile);
+  }
+}
+
+/* =============================================================================
+   6. SECTION SPACING
+   ============================================================================= */
+.section {
+  padding-block: var(--section-gap-desktop);
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding-block: var(--section-gap-tablet);
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding-block: var(--section-gap-mobile);
+  }
+}
+
+/* =============================================================================
+   7. REDUCED MOTION (§16)
+   ============================================================================= */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
