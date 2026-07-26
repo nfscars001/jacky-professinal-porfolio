@@ -23,6 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
+import { BioUnionCaseStudy } from "@/content/case-studies/bio-union";
+
 /**
  * Case study page — Phase 4 will implement full case-study modules.
  * Static generation is configured via generateStaticParams.
@@ -69,15 +71,20 @@ export default async function CaseStudyPage({ params }: Props) {
         >
           {project.summary}
         </p>
-        <p
-          style={{
-            marginTop: "2rem",
-            fontSize: "var(--step-small)",
-            color: "var(--color-line)",
-          }}
-        >
-          Full case study coming in Phase 4.
-        </p>
+        
+        {slug === "bio-union" ? (
+          <BioUnionCaseStudy />
+        ) : (
+          <p
+            style={{
+              marginTop: "2rem",
+              fontSize: "var(--step-small)",
+              color: "var(--color-line)",
+            }}
+          >
+            Full case study coming in Phase 4.
+          </p>
+        )}
       </div>
     </div>
   );

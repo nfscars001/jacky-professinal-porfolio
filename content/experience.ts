@@ -62,18 +62,16 @@ export const experience: ExperienceItem[] = [
   {
     id: "bio-union-founder",
     organisation: "Bio Union",
-    // TODO(content): confirm exact co-founder title
-    role: "Co-founder & Creative Director",
-    dateRange: "2018 – 2020",
+    role: "Founder & Product Development Lead",
+    dateRange: "2018 – 2024",
     location: "Toronto, ON",
     type: "founder",
     description:
-      "Co-founded Bio Union, a venture developing a smart-garment ecosystem for continuous physiological monitoring. Led product vision, hardware/software ecosystem design, and brand direction until the venture was wound down during the pandemic.",
+      "Founded Bio Union to explore a connected smart-garment system designed to support long-term ECG monitoring. Led product development across textiles, wearable hardware, digital experience, partner coordination, and commercialization strategy.",
     highlights: [
-      // TODO(content): verify with original documents
       "Designed the garment, sensor, data, and software product architecture",
       "Led cross-disciplinary collaboration between textile engineers and software developers",
-      "Built prototypes and tested with early users",
+      "Built physical prototypes and connected software concepts",
     ],
     url: "https://www.bio-union.io",
   },
