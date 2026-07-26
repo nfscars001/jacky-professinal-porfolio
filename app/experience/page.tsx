@@ -1,6 +1,6 @@
 
 import { generatePageMetadata } from "@/lib/metadata";
-import { experiences } from "@/content/experience";
+import { experience as experiences } from "@/content/experience";
 
 export const metadata = generatePageMetadata({
   title: "Experience",
@@ -96,7 +96,7 @@ export default function ExperiencePage() {
                       letterSpacing: "0.05em",
                     }}
                   >
-                    {exp.company}
+                    {exp.organisation}
                   </p>
                 </div>
                 <div
@@ -111,7 +111,7 @@ export default function ExperiencePage() {
                     display: "inline-block",
                   }}
                 >
-                  {exp.duration}
+                  {exp.dateRange}
                 </div>
               </div>
 
@@ -138,9 +138,9 @@ export default function ExperiencePage() {
                   margin: 0,
                 }}
               >
-                {exp.skills.map((skill, skillIndex) => (
+                {exp.highlights?.map((highlight, index) => (
                   <li
-                    key={skillIndex}
+                    key={index}
                     style={{
                       fontSize: "var(--step-label)",
                       padding: "0.25rem 0.75rem",
@@ -149,7 +149,7 @@ export default function ExperiencePage() {
                       color: "var(--color-muted)",
                     }}
                   >
-                    {skill}
+                    {highlight}
                   </li>
                 ))}
               </ul>
