@@ -76,7 +76,7 @@ export default function AboutPage() {
               <li>Product Design (UX/UI)</li>
               <li>Product Strategy</li>
               <li>Creative Technology</li>
-              <li>AI \u0026 Automation Workflows</li>
+              <li>AI/Automation Workflows</li>
               <li>Design Systems</li>
               <li>Cross-functional Leadership</li>
             </ul>
@@ -129,7 +129,7 @@ export default function AboutPage() {
           }
         }
       `}</style>
-    
+
       {/* Education Timeline */}
       <div style={{ marginTop: "6rem", maxWidth: "800px" }}>
         <h2
@@ -143,19 +143,19 @@ export default function AboutPage() {
         >
           Education
         </h2>
-        
+
         <div style={{ display: "flex", flexDirection: "column", gap: "3rem", position: "relative" }}>
           {/* Vertical line connecting the timeline */}
-          <div 
-            style={{ 
-              position: "absolute", 
-              left: "6px", 
-              top: "10px", 
-              bottom: "10px", 
-              width: "1px", 
+          <div
+            style={{
+              position: "absolute",
+              left: "6px",
+              top: "10px",
+              bottom: "10px",
+              width: "1px",
               backgroundColor: "var(--color-line)",
               zIndex: 0
-            }} 
+            }}
           />
 
           {[
@@ -192,7 +192,7 @@ export default function AboutPage() {
           ].map((item, i) => (
             <div key={i} style={{ position: "relative", paddingLeft: "3rem" }}>
               {/* Timeline dot */}
-              <div 
+              <div
                 style={{
                   position: "absolute",
                   left: "0",
@@ -205,14 +205,14 @@ export default function AboutPage() {
                   zIndex: 1
                 }}
               />
-              
+
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "1rem" }}>
                 <div style={{ flex: "1 1 auto" }}>
-                  <h3 
-                    style={{ 
-                      fontFamily: "var(--font-syne)", 
-                      fontSize: "var(--step-h5)", 
-                      fontWeight: 700, 
+                  <h3
+                    style={{
+                      fontFamily: "var(--font-syne)",
+                      fontSize: "var(--step-h5)",
+                      fontWeight: 700,
                       color: "var(--color-ink)",
                       marginBottom: "0.5rem",
                       lineHeight: 1.3
@@ -220,11 +220,11 @@ export default function AboutPage() {
                   >
                     {item.title}
                   </h3>
-                  <div 
-                    style={{ 
-                      fontFamily: "var(--font-space-mono)", 
-                      fontSize: "0.75rem", 
-                      color: "var(--color-muted)", 
+                  <div
+                    style={{
+                      fontFamily: "var(--font-space-mono)",
+                      fontSize: "0.75rem",
+                      color: "var(--color-muted)",
                       textTransform: "uppercase",
                       letterSpacing: "0.1em",
                       marginBottom: "1rem"
@@ -233,13 +233,13 @@ export default function AboutPage() {
                     {item.school}
                   </div>
                 </div>
-                
+
                 {/* Year pill */}
-                <div 
-                  style={{ 
+                <div
+                  style={{
                     backgroundColor: "#fce7f3", // Light pink background
                     color: "#db2777", // Darker pink text
-                    padding: "0.25rem 0.75rem", 
+                    padding: "0.25rem 0.75rem",
                     borderRadius: "9999px",
                     fontFamily: "var(--font-space-mono)",
                     fontSize: "0.75rem",
@@ -250,7 +250,7 @@ export default function AboutPage() {
                   {item.years}
                 </div>
               </div>
-              
+
               <p style={{ margin: 0, color: "var(--color-ink)", fontSize: "var(--step-small)", lineHeight: 1.6 }}>
                 {item.description}
               </p>

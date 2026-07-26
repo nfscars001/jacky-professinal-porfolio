@@ -28,7 +28,6 @@ export function PaviqoCaseStudy() {
         height={900}
         layout="full"
         caption="The primary dashboard provides an at-a-glance view of the AI-managed lead pipeline."
-        disclosure="AI-assisted concept visualization created in 2026 and based on Jacky's design direction."
       />
 
       <div className="container section">

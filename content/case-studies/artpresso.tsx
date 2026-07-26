@@ -18,15 +18,6 @@ export function ArtpressoCaseStudy() {
         </p>
       </div>
 
-      <MediaFigure
-        src="/images/projects/artpresso/artpresso_hero_screenshot.png"
-        alt="Artpresso hero section showing the value proposition for independent artists"
-        width={1400}
-        height={900}
-        layout="full"
-        caption="The landing experience focuses immediately on the core value proposition: confident pricing."
-      />
-
       <div className="container section">
         <h2>Selected design decisions</h2>
         

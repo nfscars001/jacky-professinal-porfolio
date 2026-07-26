@@ -20,23 +20,6 @@ export const experience: ExperienceItem[] = [
   // Current / recent roles
   // ---------------------------------------------------------------------------
   {
-    id: "westside-union",
-    organisation: "Westside Union",
-    role: "Founder & Project / Product Lead",
-    dateRange: "June 2009 – Present",
-    location: "Toronto, ON | San Francisco, CA",
-    type: "founder",
-    description:
-      "Lead multidisciplinary projects across digital products, AI-enabled workflows, design strategy, research, branding, and client delivery. Lead the design and positioning of products including Paviqo and Artpresso.",
-    highlights: [
-      "Define project scope, requirements, timelines, priorities, and delivery plans",
-      "Coordinate design, development, research, and business stakeholders",
-      "Translate client and market needs into product requirements and workflows",
-      "Develop AI and SaaS concepts for local-business operations and revenue workflows",
-    ],
-    url: "https://www.westside-union.com",
-  },
-  {
     id: "right-time-inc",
     organisation: "Right Time Inc",
     role: "Design Director / VP & Watch Customization Specialist",
@@ -68,6 +51,23 @@ export const experience: ExperienceItem[] = [
       "Adapt instruction for different learning needs, experience levels, and cultural backgrounds",
     ],
     url: "https://www.georgebrown.ca/",
+  },
+  {
+    id: "westside-union",
+    organisation: "Westside Union",
+    role: "Founder & Project / Product Lead",
+    dateRange: "June 2009 – Present",
+    location: "Toronto, ON | San Francisco, CA",
+    type: "founder",
+    description:
+      "Lead multidisciplinary projects across digital products, AI-enabled workflows, design strategy, research, branding, and client delivery. Lead the design and positioning of products including Paviqo and Artpresso.",
+    highlights: [
+      "Define project scope, requirements, timelines, priorities, and delivery plans",
+      "Coordinate design, development, research, and business stakeholders",
+      "Translate client and market needs into product requirements and workflows",
+      "Develop AI and SaaS concepts for local-business operations and revenue workflows",
+    ],
+    url: "https://www.westside-union.com",
   },
   {
     id: "village-art-studio",
@@ -103,7 +103,7 @@ export const experience: ExperienceItem[] = [
     id: "bio-union-founder",
     organisation: "Bio Union",
     role: "Founder & Product Development Lead",
-    dateRange: "Documented activity through 2023",
+    dateRange: "2015–2023",
     location: "San Francisco, CA",
     type: "founder",
     description:

@@ -14,21 +14,6 @@ export function BioUnionCaseStudy() {
         </div>
       </div>
 
-      <div className="container section" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "2rem", marginBottom: "4rem" }}>
-        <div>
-          <h4 style={{ fontSize: "var(--step-small)", color: "var(--color-muted)", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "0.5rem" }}>Role</h4>
-          <p style={{ fontWeight: 500 }}>Founder & Product Development Lead</p>
-        </div>
-        <div>
-          <h4 style={{ fontSize: "var(--step-small)", color: "var(--color-muted)", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "0.5rem" }}>Timeline</h4>
-          <p style={{ fontWeight: 500 }}>Documented activity through 2023</p>
-        </div>
-        <div>
-          <h4 style={{ fontSize: "var(--step-small)", color: "var(--color-muted)", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "0.5rem" }}>Scope</h4>
-          <p style={{ fontWeight: 500 }}>Product Strategy, Wearable Hardware, Digital Experience</p>
-        </div>
-      </div>
-
       <div className="container section">
         <h2>The human and system problem</h2>
         <p>
@@ -73,13 +58,13 @@ export function BioUnionCaseStudy() {
       </div>
 
       <MediaFigure
-        src="/images/projects/bio-union/bio-union-garment-prototype.webp"
-        alt="Original Bio Union single-lead ECG garment prototype, showing front and back views."
-        width={1100}
-        height={950}
+        src="/images/projects/bio-union/printed-sensor-module.png"
+        alt="Printed sensor module design"
+        width={1635}
+        height={780}
         layout="full"
-        caption="Original Bio Union single-lead ECG garment prototype."
-        disclosure="Front and back prototype views from private pitch deck."
+        caption="Printed sensor module design."
+        disclosure="Original design files from private pitch deck."
       />
 
       <div className="container section">
@@ -88,26 +73,14 @@ export function BioUnionCaseStudy() {
           To make the system washable, all processing and transmission electronics were isolated in a removable pebble-sized unit called the Leap M. As the project progressed, the hardware evolved to become smaller and lighter while improving battery life.
         </p>
         
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem", marginTop: "3rem" }}>
-          <div>
-            <MediaFigure
-              src="/images/projects/bio-union/leap-m-gen2.webp"
-              alt="Leap M Gen.2 hardware module"
-              width={850}
-              height={280}
-              caption="Leap M hardware prototypes documented in Bio Union's 2023 pitch deck."
-            />
-          </div>
-          <div>
-            <MediaFigure
-              src="/images/projects/bio-union/leap-m-gen3.webp"
-              alt="Leap M Gen.3 hardware module"
-              width={850}
-              height={350}
-              caption="Leap M hardware prototypes documented in Bio Union's 2023 pitch deck."
-            />
-          </div>
-        </div>
+        <MediaFigure
+          src="/images/projects/bio-union/slide-20-leap-m-hardware.png"
+          alt="Hardware evolution: Leap M series"
+          width={1009}
+          height={690}
+          layout="full"
+          caption="Hardware evolution of the Leap M series."
+        />
       </div>
       
       <div className="container section">
@@ -119,6 +92,15 @@ export function BioUnionCaseStudy() {
           <strong>Journey:</strong> Wear garment → confirm sensor connection → capture session → review signal/data summary → share or export report → follow up
         </p>
       </div>
+
+      <MediaFigure
+        src="/images/projects/bio-union/slide-16-monitoring-workflow.png"
+        alt="Monitoring workflow from signal to experience"
+        width={2330}
+        height={1040}
+        layout="full"
+        caption="Monitoring workflow overview from Bio Union's 2023 pitch deck."
+      />
 
       <div className="container section">
         <h2>Product principles</h2>
@@ -166,6 +148,33 @@ export function BioUnionCaseStudy() {
         height={1100}
         layout="full"
         caption="Bio Union exhibition at MEDICA 2017."
+      />
+
+      <MediaFigure
+        src="/images/projects/bio-union/slide-37-press-2018.png"
+        alt="Bio Union press coverage in 2018"
+        width={2245}
+        height={917}
+        layout="full"
+        caption="Press coverage in 2018"
+      />
+
+      <MediaFigure
+        src="/images/projects/bio-union/slide-38-recognition-2020-2021.png"
+        alt="Bio Union recognition in 2020 and 2021"
+        width={2046}
+        height={1002}
+        layout="full"
+        caption="Recognition 2020–2021"
+      />
+
+      <MediaFigure
+        src="/images/projects/bio-union/slide-39-speaking-2022.png"
+        alt="Speaking engagement in 2022"
+        width={2271}
+        height={850}
+        layout="full"
+        caption="Speaking engagements in 2022"
       />
 
       <div className="container section">
