@@ -115,10 +115,10 @@ export const projects: Project[] = [
     shortTitle: "Bio Union",
     // TODO(content): Jacky to review — health claims must be carefully verified
     summary:
-      "A connected smart-garment ecosystem for continuous physiological monitoring. Bio Union explored the intersection of textile engineering, biosensor technology, and consumer health software.",
+      "Bio Union explored how ECG sensing could move from a short clinical encounter into clothing designed for everyday wear. As founder, I helped shape a connected system spanning garment construction, printed electrodes, a removable sensing device, signal processing, mobile experiences, and service models.",
     cardStatement:
-      "Designing a smart-garment ecosystem connecting biosensors, data, and health software.",
-    year: "2018–2020",
+      "Connected smart garments for long-term physiological monitoring.",
+    year: "2018–2024",
     status: "previous-venture",
     featured: true,
     featuredOrder: 2,
@@ -130,7 +130,7 @@ export const projects: Project[] = [
       "Smart Textiles",
     ],
     // TODO(content): Jacky to confirm collaborator names and their roles
-    roles: ["Co-founder", "Product Designer", "Creative Director"],
+    roles: ["Founder", "Product Development Lead"],
     collaborators: [],
     heroImage: {
       src: "/images/projects/bio-union/bio-union-hero.jpg",
@@ -146,7 +146,7 @@ export const projects: Project[] = [
     seo: {
       title: "Bio Union — Smart Garment Ecosystem for Physiological Monitoring",
       description:
-        "Jacky's retrospective on co-founding Bio Union: a smart-garment ecosystem connecting biosensors, health data, and mobile software.",
+        "Jacky's retrospective on Bio Union: exploring a connected smart-garment system designed to support long-term ECG monitoring through clothing.",
       image: "/images/projects/bio-union/bio-union-og.jpg",
     },
   },
