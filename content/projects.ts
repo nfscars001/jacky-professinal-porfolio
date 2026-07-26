@@ -118,7 +118,7 @@ export const projects: Project[] = [
       "Bio Union explored how ECG sensing could move from a short clinical encounter into clothing designed for everyday wear. As founder, I helped shape a connected system spanning garment construction, printed electrodes, a removable sensing device, signal processing, mobile experiences, and service models.",
     cardStatement:
       "Connected smart garments for long-term physiological monitoring.",
-    year: "2018–2024",
+    year: "Documented activity through 2023",
     status: "previous-venture",
     featured: true,
     featuredOrder: 2,
@@ -133,13 +133,12 @@ export const projects: Project[] = [
     roles: ["Founder", "Product Development Lead"],
     collaborators: [],
     heroImage: {
-      src: "/images/projects/bio-union/bio-union-hero.jpg",
+      src: "/images/projects/bio-union/bio-union-garment-prototype.webp",
       alt: "Close-up of a Bio Union smart garment showing embedded sensor threads in dark athletic fabric",
-      width: 1400,
-      height: 900,
-      provenance: "ai-assisted",
-      disclosure:
-        "AI-assisted concept visualization created in 2026 based on Jacky's original design direction and archived materials.",
+      width: 1100,
+      height: 950,
+      provenance: "original",
+      disclosure: "Original Bio Union single-lead ECG garment prototype.",
     },
     archiveUrl: "https://www.bio-union.io",
     caseStudyPath: "/work/bio-union",

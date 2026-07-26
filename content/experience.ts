@@ -63,7 +63,7 @@ export const experience: ExperienceItem[] = [
     id: "bio-union-founder",
     organisation: "Bio Union",
     role: "Founder & Product Development Lead",
-    dateRange: "2018 – 2024",
+    dateRange: "Documented activity through 2023",
     location: "Toronto, ON",
     type: "founder",
     description:
