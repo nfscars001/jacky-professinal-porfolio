@@ -1,0 +1,324 @@
+diff --git a/content/experience.ts b/content/experience.ts
+index 728525f..dd6b062 100644
+--- a/content/experience.ts
++++ b/content/experience.ts
+@@ -1,109 +1,106 @@
++/* =============================================================================
++   EXPERIENCE DATA
++   Single source of truth for the Experience page timeline.
++   All copy is DRAFT — Jacky must review and approve before launch.
++   Fields marked TODO(content) require confirmation.
++   ============================================================================= */
++
+ export interface ExperienceItem {
+-  company: string;
++  id: string;
++  organisation: string;
+   role: string;
+-  duration: string;
++  dateRange: string;
++  location: string;
++  type: "employment" | "founder" | "teaching" | "education";
+   description: string;
+-  skills: string[];
++  highlights?: string[];
++  url?: string;
+ }
+ 
+-export const experiences: ExperienceItem[] = [
+-  {
+-    company: "Westside Union",
+-    role: "Founder & Project / Product Lead",
+-    duration: "June 2009 – Present",
+-    description: "Lead multidisciplinary projects across digital products, AI-enabled workflows, design strategy, research, branding, and client delivery. Developed AI and SaaS concepts for local-business operations and revenue workflows, leading the design and positioning of products including Paviqo and Artpresso.",
+-    skills: ["Project Scope Definition", "Stakeholder Coordination", "Product Requirements", "Prototyping", "AI workflows", "SaaS Development"],
+-  },
+-  {
+-    company: "The Village Art Studio",
+-    role: "Founder & Program Director",
+-    duration: "December 2023 – Present",
+-    description: "Founded and direct a community-focused arts initiative supporting exhibitions, workshops, artist collaborations, and accessible creative programming in Toronto. Build partnerships with local artists and community businesses.",
+-    skills: ["Event Planning", "Workshop Delivery", "Partnership Building", "Audience Development"],
+-  },
+-  {
+-    company: "Right Time Inc",
+-    role: "Watch Customization Specialist",
+-    duration: "November 2022 – Present",
+-    description: "Manage bespoke watch-customization projects from customer consultation through design selection, component coordination, quality review, and delivery.",
+-    skills: ["Bespoke Customization", "Visual Consistency", "Customer Consultation"],
+-  },
+-  {
+-    company: "George Brown College Continuing Education",
+-    role: "Instructor — Fashion and Design",
+-    duration: "August 2022 – Present",
+-    description: "Develop and deliver college-level curriculum in fashion, design, and related creative disciplines. Mentor students through research, concept development, production, and presentation.",
+-    skills: ["Curriculum Development", "Student Mentorship", "Performance Evaluation", "Instructional Design"],
+-  },
+-  {
+-    company: "Right Time Inc",
+-    role: "Design Director / VP",
+-    duration: "October 2022 – December 2025",
+-    description: "Led design, branding, customization, and selected operational initiatives. Managed custom watch concepts from client brief through execution, and supported business initiatives.",
+-    skills: ["Brand Identity", "Visual Communication", "Team Coordination", "Promotional Materials"],
+-  },
+-  {
+-    company: "MAKALOT INDUSTRIAL CO., LTD.",
+-    role: "U.S FDA Agent",
+-    duration: "April 2020 – September 2024",
+-    description: "Acted as the U.S FDA Agent representative, serving as the FDA contact window and handling document review.",
+-    skills: ["FDA Communications", "Regulatory Compliance", "Document Review"],
+-  },
+-  {
+-    company: "Bio Union",
+-    role: "Founder / Researcher",
+-    duration: "May 2018 – September 2024",
+-    description: "Founded a wearable-technology venture developing sensor-integrated garments for continuous physiological monitoring. Defined product vision across smart textiles, sensors, hardware, software, and healthcare applications.",
+-    skills: ["Wearable Technology", "Smart Textiles", "Concept Development", "Cross-functional Coordination"],
++export const experience: ExperienceItem[] = [
++  // ---------------------------------------------------------------------------
++  // Current / recent roles
++  // ---------------------------------------------------------------------------
++  {
++    id: "paviqo-product",
++    organisation: "Westside Union / Paviqo",
++    // TODO(content): confirm exact role title
++    role: "Founder & Product Designer",
++    // TODO(content): confirm exact start date
++    dateRange: "2024 – Present",
++    location: "Toronto, ON",
++    type: "founder",
++    // TODO(content): draft text — Jacky to review
++    description:
++      "Leading product strategy and design for Paviqo, an AI-powered lead conversion and recovery platform for automotive dealerships.",
++    highlights: [
++      // TODO(content): replace with verified, specific highlights
++      "Designed AI-assisted lead qualification and follow-up workflows",
++      "Defined product architecture and key decision points",
++      "Built multilingual interaction patterns for diverse dealership contexts",
++    ],
++    url: "https://paviqo.com/",
++  },
++  {
++    id: "george-brown-faculty",
++    organisation: "George Brown College",
++    // TODO(content): confirm exact faculty title and department
++    role: "Faculty",
++    // TODO(content): confirm start date and teaching area
++    dateRange: "TODO(content): confirm dates",
++    location: "Toronto, ON",
++    type: "teaching",
++    description:
++      // TODO(content): describe teaching area and courses
++      "Teaching design and creative technology at George Brown College.",
++    url: "https://www.georgebrown.ca/",
+   },
+-  {
+-    company: "Chinese Culture University",
+-    role: "Instructor",
+-    duration: "October 2015 – June 2019",
+-    description: "Taught History of African-American Culture and Music Production.",
+-    skills: ["Course Planning", "On-Site Teaching", "Music Production"],
+-  },
+-  {
+-    company: "NKG (新金寶)",
+-    role: "Medical Wearable Device Engineer & Project Manager",
+-    duration: "January 2017 – May 2018",
+-    description: "Led a cross-functional initiative that standardized work across ten departments and supported the development of two major wearable products within six months. Contributed to product design, garment engineering, pattern development, and UI/UX concepts.",
+-    skills: ["Cross-functional Leadership", "Garment Engineering", "Pattern Making", "UI/UX Design"],
+-  },
+-  {
+-    company: "Ties.DB",
+-    role: "Blockchain Technology Advisor",
+-    duration: "September 2017 – December 2017",
+-    description: "Advised on blockchain technology for a decentralized database, focusing on UX Design consulting and Smart Contract review and debug.",
+-    skills: ["UX Design Consulting", "Smart Contract Debugging", "Blockchain Technology"],
+-  },
+-  {
+-    company: "Seven Crash",
+-    role: "Design Director",
+-    duration: "November 2015 – December 2016",
+-    description: "Managed the ready-to-wear department and was in charge of the haute couture line. Launched the high-fashion line and opened the first flagship store in Crystal Galleria Shanghai.",
+-    skills: ["Fashion Design", "Creative Direction", "Store Interior Design", "Collection Conceptualization"],
+-  },
+-  {
+-    company: "China University of Technology",
+-    role: "Instructor (Department of Visual Communication and Design)",
+-    duration: "July 2014 – September 2016",
+-    description: "Visual Design and Internship program course lecturer. Taught Visual Design Process, UI/UX Design, Pitch Deck Design, and Presentation Skills.",
+-    skills: ["Visual Design", "UI/UX Education", "Pitch Deck Instruction", "Mentorship"],
++
++  // ---------------------------------------------------------------------------
++  // Previous ventures
++  // ---------------------------------------------------------------------------
++  {
++    id: "bio-union-founder",
++    organisation: "Bio Union",
++    role: "Founder & Product Development Lead",
++    dateRange: "2018 – 2024",
++    location: "Toronto, ON",
++    type: "founder",
++    description:
++      "Founded Bio Union to explore a connected smart-garment system designed to support long-term ECG monitoring. Led product development across textiles, wearable hardware, digital experience, partner coordination, and commercialization strategy.",
++    highlights: [
++      "Designed the garment, sensor, data, and software product architecture",
++      "Led cross-disciplinary collaboration between textile engineers and software developers",
++      "Built physical prototypes and connected software concepts",
++    ],
++    url: "https://www.bio-union.io",
+   },
+-  {
+-    company: "National Yunlin University of Science and Technology",
+-    role: "Instructor (Department of Industrial Design)",
+-    duration: "2015 – 2016",
+-    description: "Product Design Process course lecturer at the Department of Industrial design. Taught UI/UX design, pitch deck design, and presentation skills.",
+-    skills: ["Industrial Design Education", "UI/UX Design", "Presentation Skills"],
++
++  // ---------------------------------------------------------------------------
++  // Earlier career
++  // ---------------------------------------------------------------------------
++  {
++    id: "fashion-textile",
++    organisation: "TODO(content): organisation name",
++    role: "TODO(content): role title",
++    dateRange: "TODO(content): date range",
++    location: "TODO(content): location",
++    type: "employment",
++    description:
++      "TODO(content): fashion and textile engineering background — Jacky to provide details.",
+   },
+-  {
+-    company: "Box Clothing",
+-    role: "Founder",
+-    duration: "September 2007 – 2016",
+-    description: "Founded an haute couture brand in Taiwan focusing on women's apparel with specialized tailoring. Produced hand-made and small-production collections based on black and white themes.",
+-    skills: ["Haute Couture Design", "Apparel Tailoring", "Brand Management", "Production Management"],
++
++  // ---------------------------------------------------------------------------
++  // Education
++  // ---------------------------------------------------------------------------
++  {
++    id: "mfa",
++    organisation: "TODO(content): institution name",
++    role: "Master of Fine Arts (MFA)",
++    dateRange: "TODO(content): years",
++    location: "TODO(content): location",
++    type: "education",
++    description: "TODO(content): MFA programme and focus area.",
+   },
+ ];
+ 
+@@ -112,25 +109,25 @@ export const careerJourneyStages = [
+   {
+     id: "textiles",
+     label: "Fashion & Textile Engineering",
+-    dateRange: "2007–2016",
+-    summary: "Founded Box Clothing and Seven Crash, blending haute couture tailoring with ready-to-wear collections and leading design teams.",
++    dateRange: "TODO(content)",
++    summary: "TODO(content): one sentence + one proof point",
+   },
+   {
+     id: "wearable-health",
+     label: "Wearable Health Technology",
+-    dateRange: "2017–2024",
+-    summary: "Innovated at NKG and Bio Union, designing biosensor garment ecosystems that bridge textiles, hardware, and health software.",
++    dateRange: "2018–2020",
++    summary: "Co-founded Bio Union, designing a biosensor garment ecosystem bridging textiles, hardware, and health software.",
+   },
+   {
+     id: "education-design",
+     label: "Education & Design Leadership",
+-    dateRange: "2014–Present",
+-    summary: "Teaching design and creative technology at multiple institutions (including George Brown College) while advancing product practice.",
++    dateRange: "TODO(content)",
++    summary: "Teaching design and creative technology at George Brown College while advancing product practice.",
+   },
+   {
+     id: "digital-ai",
+     label: "Digital Products & AI",
+     dateRange: "2024–Present",
+-    summary: "Building Paviqo — an AI-powered SaaS platform — and shipping tools like Artpresso for creative professionals through Westside Union.",
++    summary: "Building Paviqo — an AI-powered SaaS platform — and shipping tools like Artpresso for creative professionals.",
+   },
+ ] as const;
+diff --git a/content/projects.ts b/content/projects.ts
+index b8cfd7d..c15d293 100644
+--- a/content/projects.ts
++++ b/content/projects.ts
+@@ -20,7 +20,6 @@ export type AssetProvenance =
+ export type ProjectStatus =
+   | "live"
+   | "in-development"
+-  | "open-beta"
+   | "previous-venture"
+   | "archive";
+ 
+@@ -78,8 +77,8 @@ export const projects: Project[] = [
+       "An AI-powered lead conversion and recovery platform for automotive dealerships. Paviqo helps dealerships capture, qualify, and follow up with leads through AI-assisted workflows and multilingual support.",
+     cardStatement:
+       "Reducing lead leakage for automotive dealerships with AI-powered qualification and follow-up.",
+-    year: "2026",
+-    status: "open-beta",
++    year: "2024–2025",
++    status: "in-development",
+     featured: true,
+     featuredOrder: 1,
+     categories: ["digital-products", "ai-automation"],
+@@ -88,7 +87,7 @@ export const projects: Project[] = [
+     roles: ["Product Designer", "Product Strategist"],
+     collaborators: [],
+     heroImage: {
+-      src: "/images/projects/paviqo/paviqo_hero_screenshot.jpg",
++      src: "/images/projects/paviqo/paviqo-hero.jpg",
+       alt: "Paviqo AI-powered automotive lead management dashboard showing a lead pipeline with qualification stages",
+       width: 1400,
+       height: 900,
+@@ -116,10 +115,10 @@ export const projects: Project[] = [
+     shortTitle: "Bio Union",
+     // TODO(content): Jacky to review — health claims must be carefully verified
+     summary:
+-      "A connected smart-garment ecosystem for continuous physiological monitoring. Bio Union explored the intersection of textile engineering, biosensor technology, and consumer health software.",
++      "Bio Union explored how ECG sensing could move from a short clinical encounter into clothing designed for everyday wear. As founder, I helped shape a connected system spanning garment construction, printed electrodes, a removable sensing device, signal processing, mobile experiences, and service models.",
+     cardStatement:
+-      "Designing a smart-garment ecosystem connecting biosensors, data, and health software.",
+-    year: "2018–2020",
++      "Connected smart garments for long-term physiological monitoring.",
++    year: "2018–2024",
+     status: "previous-venture",
+     featured: true,
+     featuredOrder: 2,
+@@ -131,7 +130,7 @@ export const projects: Project[] = [
+       "Smart Textiles",
+     ],
+     // TODO(content): Jacky to confirm collaborator names and their roles
+-    roles: ["Co-founder", "Product Designer", "Creative Director"],
++    roles: ["Founder", "Product Development Lead"],
+     collaborators: [],
+     heroImage: {
+       src: "/images/projects/bio-union/bio-union-hero.jpg",
+@@ -147,7 +146,7 @@ export const projects: Project[] = [
+     seo: {
+       title: "Bio Union — Smart Garment Ecosystem for Physiological Monitoring",
+       description:
+-        "Jacky's retrospective on co-founding Bio Union: a smart-garment ecosystem connecting biosensors, health data, and mobile software.",
++        "Jacky's retrospective on Bio Union: exploring a connected smart-garment system designed to support long-term ECG monitoring through clothing.",
+       image: "/images/projects/bio-union/bio-union-og.jpg",
+     },
+   },
+@@ -164,7 +163,7 @@ export const projects: Project[] = [
+       "A practical artwork-pricing tool for independent artists and creative professionals. Artpresso simplifies a multi-variable pricing challenge into a clear, guided calculation workflow.",
+     cardStatement:
+       "Helping independent artists price their work with confidence through a clear, guided tool.",
+-    year: "2025",
++    year: "2024",
+     status: "live",
+     featured: true,
+     featuredOrder: 3,
+@@ -179,7 +178,7 @@ export const projects: Project[] = [
+     roles: ["Product Designer", "Founder"],
+     collaborators: [],
+     heroImage: {
+-      src: "/images/projects/artpresso/artpresso_hero_screenshot.png",
++      src: "/images/projects/artpresso/artpresso-hero.jpg",
+       alt: "Artpresso artwork pricing tool shown on a tablet, displaying a pricing calculator with fields for artwork dimensions, materials, and a calculated result",
+       width: 1400,
+       height: 900,

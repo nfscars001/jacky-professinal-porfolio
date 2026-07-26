@@ -52,8 +52,8 @@ export default async function CaseStudyPage(props: Props) {
       ContentComponent = ArtpressoCaseStudy;
       break;
     case "bio-union":
-      problem = "Athletes needed high-fidelity physiological data that standard wrist-based trackers couldn't accurately provide.";
-      duration = "2 years (2018–2020)";
+      problem = "Health data is often captured in short clinical windows or through consumer devices not designed for sustained monitoring.";
+      duration = "6 years (2018–2024)";
       ContentComponent = BioUnionCaseStudy;
       break;
     case "paviqo":

@@ -1,23 +1,57 @@
 import { MediaFigure } from "@/components/case-study/media-figure";
+import { HistoricalProjectNotice } from "@/components/case-study/bio-union/historical-project-notice";
+import { ProjectFacts } from "@/components/case-study/bio-union/project-facts";
+import { ConnectedSystemDiagram } from "@/components/case-study/bio-union/connected-system-diagram";
+import { DesignConstraintMatrix } from "@/components/case-study/bio-union/design-constraint-matrix";
+import { HardwareEvolutionTimeline } from "@/components/case-study/bio-union/hardware-evolution-timeline";
+import { CapabilityStatusMatrix } from "@/components/case-study/bio-union/capability-status-matrix";
+import { EvidenceStatusTable } from "@/components/case-study/bio-union/evidence-status-table";
+import { ServiceEcosystemDiagram } from "@/components/case-study/bio-union/service-ecosystem-diagram";
+import { TeamDisciplineMap } from "@/components/case-study/bio-union/team-discipline-map";
+import { PublicMilestoneTimeline } from "@/components/case-study/bio-union/public-milestone-timeline";
+import { OutcomeAndReflection } from "@/components/case-study/bio-union/outcome-and-reflection";
+import { RetrospectiveCallout } from "@/components/case-study/bio-union/retrospective-callout";
 
 export function BioUnionCaseStudy() {
   return (
     <article className="case-study-content">
-      <div className="container section">
-        <h2>Context and problem</h2>
-        <p>
-          Between 2018 and 2020, the wearable technology market was dominated by wrist-based fitness trackers. However, athletes and healthcare professionals needed higher-fidelity physiological data that a wrist sensor simply couldn&apos;t provide consistently. 
-        </p>
-        <p>
-          The challenge was to move the sensors closer to the core of the body without sacrificing comfort or requiring complex, clinical-looking equipment. Bio Union was formed to explore the intersection of textile engineering, biosensor technology, and consumer health software.
-        </p>
+      {/* 1. Hero handled by page.tsx */}
+      <HistoricalProjectNotice />
+      <ProjectFacts />
 
-        <h2>My role &amp; approach</h2>
+      <div className="container section">
+        <h2>The human and system problem</h2>
         <p>
-          As a Co-founder and Product Designer, I was responsible for bridging the gap between the hardware engineering of the smart garments and the digital experience of the companion application. 
+          Health data is often captured in short clinical windows or through consumer devices that may not be designed for every monitoring need. Bio Union asked whether a familiar object — clothing — could make longer-duration sensing easier to integrate into everyday routines.
         </p>
         <p>
-          The approach required an intense focus on materials science and UX simultaneously. We had to ensure that the physical product felt like premium athletic wear while the software delivered clinical-grade insights in an accessible format.
+          Our exploration was driven by the friction of separate electrodes, wires, patches, and complex setup processes, aiming to improve comfort and adherence, and better connect home data with professional follow-up.
+        </p>
+      </div>
+
+      <div className="container section">
+        <h2>The product thesis: clothing as an interface</h2>
+        <p>
+          Textiles contact a large area of the body and are already part of daily routines. We hypothesized that garment pattern and material decisions could stabilize sensor placement. A removable device separates electronics from washable textile components, while a connected application translates captured signals into a usable experience.
+        </p>
+      </div>
+
+      <ConnectedSystemDiagram />
+
+      <div className="container section">
+        <h2>Choosing a sensing approach around the monitoring context</h2>
+        <p>
+          The team explored whether electrodes integrated into a close-fitting garment could support sustained ECG capture with less dependence on a user holding or positioning a separate device.
+        </p>
+        <p>
+          This required navigating the trade-offs between a close-fitting garment, comfort, movement, washability, and signal quality.
+        </p>
+      </div>
+
+      <div className="container section">
+        <h2>Designing the garment around movement</h2>
+        <p>
+          The smart garment was designed with single-lead garment construction, using printed conductive paths and electrodes. A front and back placement along with a chest-mounted removable device ensured a close but comfortable fit explicitly aimed at reducing movement at the sensing area.
         </p>
       </div>
 
@@ -27,21 +61,20 @@ export function BioUnionCaseStudy() {
         width={1400}
         height={900}
         layout="full"
-        caption="A look at the smart garment ecosystem, embedding biosensors directly into high-performance athletic fabrics."
-        disclosure="AI-assisted concept visualization created in 2026 based on Jacky's original design direction and archived materials."
+        caption="TODO(content): Original garment prototype photo to be added."
+        disclosure="Currently showing placeholder. Needs replacement with verified original asset."
       />
 
+      <DesignConstraintMatrix />
+      <HardwareEvolutionTimeline />
+      
       <div className="container section">
-        <h2>Selected design decisions</h2>
-        
-        <h3>1. Invisible Technology</h3>
+        <h2>From signal to experience</h2>
         <p>
-          We made the deliberate decision to hide the technology as much as possible. Unlike competitors who highlighted the &quot;tech&quot; aspect with prominent plastic modules, Bio Union&apos;s sensors were woven into the fabric. The only visible technology was a small, removable processing node that acted as the bridge to the mobile app.
+          The platform was conceptualized to process various signals into a coherent user experience. We mapped out a complete wearer journey to ensure smooth usage from capturing a session to professional follow-up.
         </p>
-
-        <h3>2. Data Translation</h3>
         <p>
-          Raw biometric data is overwhelming. We designed the mobile application to translate complex physiological metrics (like muscle oxygenation and precise heart rate variability) into actionable coaching insights. The UI used a dark, focused aesthetic to reduce glare during outdoor use and emphasize the bright data visualizations.
+          <strong>Journey:</strong> Wear garment → confirm sensor connection → capture session → review signal/data summary → share or export report → follow up
         </p>
       </div>
 
@@ -55,15 +88,35 @@ export function BioUnionCaseStudy() {
         disclosure="Interface visualization recreated from archived concepts and development notes."
       />
 
+      <CapabilityStatusMatrix />
+      <EvidenceStatusTable />
+
       <div className="container section">
-        <h2>Outcome and reflection</h2>
+        <h2>Product principles</h2>
+        <ol>
+          <li>Reduce setup burden.</li>
+          <li>Design for comfort and familiar routines.</li>
+          <li>Integrate sensing without exposed wires.</li>
+          <li>Separate washable textiles from removable electronics.</li>
+          <li>Reduce dependence on disposable components where feasible.</li>
+          <li>Support different contexts through a shared platform.</li>
+        </ol>
+      </div>
+
+      <ServiceEcosystemDiagram />
+      <TeamDisciplineMap />
+
+      <div className="container section">
+        <h2>Historical market framing used in 2023</h2>
         <p>
-          Bio Union successfully developed functional prototypes and secured initial interest from specialized athletic programs. However, the complexities of scaling smart textile manufacturing ultimately led us to wind down the venture in 2020.
-        </p>
-        <p>
-          Looking back, the project was a masterclass in cross-disciplinary design. It taught me that when designing connected hardware, the physical comfort of the device is the absolute baseline of user experience; if the garment isn&apos;t comfortable to wear, the quality of the software experience is irrelevant.
+          In 2023, the team positioned Bio Union between consumer wearables and more expensive professional systems. The business exploration considered growth in telehealth, wearable medical devices, and smart clothing, alongside licensing, subscription, and manufacturing relationships.
         </p>
       </div>
+
+      <PublicMilestoneTimeline />
+      <OutcomeAndReflection />
+      <RetrospectiveCallout />
+
     </article>
   );
 }
