@@ -206,55 +206,6 @@ export const experience: ExperienceItem[] = [
     description:
       "Interned in the factory management department. Created tutorial videos for new manufacturing operators to improve efficiency and reduce training time.",
   },
-
-  // ---------------------------------------------------------------------------
-  // Education
-  // ---------------------------------------------------------------------------
-  {
-    id: "mfa-academy-art",
-    organisation: "Academy of Art University",
-    role: "Master of Fine Arts - MFA, Fashion/Apparel Design",
-    dateRange: "2019 – 2022",
-    location: "San Francisco, CA",
-    type: "education",
-    description: "Master of Fine Arts program focused on Fashion and Apparel Design.",
-  },
-  {
-    id: "hku-fintech",
-    organisation: "The University of Hong Kong",
-    role: "Higher Diploma, FinTech",
-    dateRange: "2018 – 2019",
-    location: "Hong Kong",
-    type: "education",
-    description: "Higher Diploma focusing on Financial Technology.",
-  },
-  {
-    id: "dale-carnegie",
-    organisation: "Dale Carnegie Training",
-    role: "The Dale Carnegie Course",
-    dateRange: "2018",
-    location: "Taiwan",
-    type: "education",
-    description: "Professional development and leadership training.",
-  },
-  {
-    id: "bachelor-textile",
-    organisation: "Chinese Culture University",
-    role: "Bachelor’s Degree, Textile Sciences and Engineering",
-    dateRange: "2009 – 2014",
-    location: "Taipei City, Taiwan",
-    type: "education",
-    description: "Undergraduate degree focusing on Textile Sciences and Engineering.",
-  },
-  {
-    id: "udemy-python",
-    organisation: "Udemy Academy",
-    role: "Complete Python Bootcamp, Computer Programming",
-    dateRange: "2017 – 2018",
-    location: "Online",
-    type: "education",
-    description: "Comprehensive bootcamp on Python programming.",
-  }
 ];
 
 /** Career journey milestones for the homepage horizontal timeline (§7.5) */
