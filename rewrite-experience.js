@@ -1,4 +1,6 @@
-/* =============================================================================
+const fs = require('fs');
+
+const fileContent = `/* =============================================================================
    EXPERIENCE DATA
    Single source of truth for the Experience page timeline.
    ============================================================================= */
@@ -284,3 +286,7 @@ export const careerJourneyStages = [
     summary: "Leading Westside Union to build AI-powered SaaS platforms and shipping tools like Paviqo and Artpresso for creative professionals.",
   },
 ] as const;
+`;
+
+fs.writeFileSync('content/experience.ts', fileContent);
+console.log('Successfully updated content/experience.ts');
