@@ -128,7 +128,7 @@ export function SiteFooter() {
               }}
             >
               <a
-                href="mailto:TODO(content): add-email@domain.com"
+                href="mailto:jackyho@weiinsight.com"
                 style={{
                   color: "var(--color-accent)",
                   fontSize: "var(--step-small)",
@@ -136,7 +136,6 @@ export function SiteFooter() {
                   textDecoration: "none",
                 }}
               >
-                {/* TODO(content): replace with Jacky's email address */}
                 Email
               </a>
               <a

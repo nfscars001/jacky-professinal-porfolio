@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450" width="100%" height="100%">
+  <defs>
+    <style>
+      .platform-bg { fill: #f8fafc; stroke: #e2e8f0; stroke-width: 2; rx: 12; }
+      .box { fill: #ffffff; stroke: #d1d5db; stroke-width: 2; rx: 8; }
+      .accent-box { fill: #eff6ff; stroke: #3b82f6; stroke-width: 2; rx: 8; }
+      .text-title { font-family: -apple-system, system-ui, sans-serif; font-size: 16px; font-weight: 600; fill: #1f2937; text-anchor: middle; }
+      .text-desc { font-family: -apple-system, system-ui, sans-serif; font-size: 12px; fill: #4b5563; text-anchor: middle; }
+      .line { stroke: #9ca3af; stroke-width: 2; stroke-dasharray: 4; fill: none; }
+      .section-title { font-family: -apple-system, system-ui, sans-serif; font-size: 14px; font-weight: 600; fill: #64748b; letter-spacing: 1px; text-transform: uppercase; }
+    </style>
+  </defs>
+
+  <rect x="50" y="50" width="200" height="200" class="accent-box" />
+  <text x="150" y="150" class="text-title">Bio Union</text>
+  <text x="150" y="170" class="text-desc">Core Tech Platform</text>
+
+  <!-- ODM -->
+  <line x1="250" y1="100" x2="350" y2="100" class="line" />
+  <rect x="350" y="70" width="180" height="60" class="box" />
+  <text x="440" y="98" class="text-title">ODM Business</text>
+  <text x="440" y="116" class="text-desc">Powered by Bio Union</text>
+
+  <!-- B2B2C / Own Brand -->
+  <line x1="250" y1="180" x2="350" y2="180" class="line" />
+  <rect x="350" y="150" width="180" height="60" class="box" />
+  <text x="440" y="178" class="text-title">Own Brand</text>
+  <text x="440" y="196" class="text-desc">System Subscriptions</text>
+
+  <!-- Providers -->
+  <text x="710" y="60" class="section-title">End Markets &amp; Partners</text>
+  <rect x="620" y="70" width="180" height="40" class="box" />
+  <text x="710" y="94" class="text-title" font-size="14">Clothing Brands</text>
+
+  <rect x="620" y="120" width="180" height="40" class="box" />
+  <text x="710" y="144" class="text-title" font-size="14">Sports &amp; Athletics</text>
+
+  <rect x="620" y="170" width="180" height="40" class="box" />
+  <text x="710" y="194" class="text-title" font-size="14">Clinics &amp; Rehab</text>
+
+  <rect x="620" y="220" width="180" height="40" class="box" />
+  <text x="710" y="244" class="text-title" font-size="14">Enterprise (ESG)</text>
+
+  <!-- Connectors from Business lines to Markets -->
+  <line x1="530" y1="100" x2="620" y2="90" class="line" />
+  <line x1="530" y1="180" x2="580" y2="180" class="line" />
+  <line x1="580" y1="180" x2="580" y2="140" class="line" />
+  <line x1="580" y1="140" x2="620" y2="140" class="line" />
+  <line x1="580" y1="180" x2="580" y2="190" class="line" />
+  <line x1="580" y1="190" x2="620" y2="190" class="line" />
+  <line x1="580" y1="180" x2="580" y2="240" class="line" />
+  <line x1="580" y1="240" x2="620" y2="240" class="line" />
+
+  <!-- Lower sections for Users vs Providers -->
+  <rect x="50" y="320" width="400" height="80" class="platform-bg" />
+  <text x="250" y="345" class="text-title">Private Users (B2C)</text>
+  <text x="250" y="365" class="text-desc">High-risk patients, elderly, aging at home,</text>
+  <text x="250" y="380" class="text-desc">sport enthusiasts &amp; self-medication</text>
+
+  <rect x="470" y="320" width="480" height="80" class="platform-bg" />
+  <text x="710" y="345" class="text-title">Service Providers (B2B)</text>
+  <text x="710" y="365" class="text-desc">Cardiologists, remote monitoring centers, pharmacies,</text>
+  <text x="710" y="380" class="text-desc">virtual visit providers &amp; home-care</text>
+
+</svg>

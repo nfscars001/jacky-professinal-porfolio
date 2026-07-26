@@ -77,7 +77,7 @@ export const projects: Project[] = [
       "An AI-powered lead conversion and recovery platform for automotive dealerships. Paviqo helps dealerships capture, qualify, and follow up with leads through AI-assisted workflows and multilingual support.",
     cardStatement:
       "Reducing lead leakage for automotive dealerships with AI-powered qualification and follow-up.",
-    year: "2024–2025",
+    year: "Open beta since March 2026",
     status: "in-development",
     featured: true,
     featuredOrder: 1,
@@ -87,13 +87,11 @@ export const projects: Project[] = [
     roles: ["Product Designer", "Product Strategist"],
     collaborators: [],
     heroImage: {
-      src: "/images/projects/paviqo/paviqo-hero.jpg",
+      src: "/images/projects/paviqo/paviqo_hero_cover.jpg",
       alt: "Paviqo AI-powered automotive lead management dashboard showing a lead pipeline with qualification stages",
-      width: 1400,
-      height: 900,
+      width: 3275,
+      height: 2543,
       provenance: "ai-assisted",
-      disclosure:
-        "AI-assisted concept visualization created in 2026 and based on Jacky's design direction.",
     },
     liveUrl: "https://paviqo.com/",
     caseStudyPath: "/work/paviqo",
@@ -115,10 +113,10 @@ export const projects: Project[] = [
     shortTitle: "Bio Union",
     // TODO(content): Jacky to review — health claims must be carefully verified
     summary:
-      "A connected smart-garment ecosystem for continuous physiological monitoring. Bio Union explored the intersection of textile engineering, biosensor technology, and consumer health software.",
+      "Bio Union explored how ECG sensing could move from a short clinical encounter into clothing designed for everyday wear. As founder, I helped shape a connected system spanning garment construction, printed electrodes, a removable sensing device, signal processing, mobile experiences, and service models.",
     cardStatement:
-      "Designing a smart-garment ecosystem connecting biosensors, data, and health software.",
-    year: "2018–2020",
+      "Connected smart garments for long-term physiological monitoring.",
+    year: "2015–2023",
     status: "previous-venture",
     featured: true,
     featuredOrder: 2,
@@ -130,23 +128,22 @@ export const projects: Project[] = [
       "Smart Textiles",
     ],
     // TODO(content): Jacky to confirm collaborator names and their roles
-    roles: ["Co-founder", "Product Designer", "Creative Director"],
+    roles: ["Founder", "Product Development Lead"],
     collaborators: [],
     heroImage: {
-      src: "/images/projects/bio-union/bio-union-hero.jpg",
-      alt: "Close-up of a Bio Union smart garment showing embedded sensor threads in dark athletic fabric",
+      src: "/images/projects/bio-union/bio-union-cover.png",
+      alt: "Bio Union cover image showing smart garment context",
       width: 1400,
       height: 900,
-      provenance: "ai-assisted",
-      disclosure:
-        "AI-assisted concept visualization created in 2026 based on Jacky's original design direction and archived materials.",
+      provenance: "original",
+      disclosure: "Bio Union pitch deck cover image.",
     },
     archiveUrl: "https://www.bio-union.io",
     caseStudyPath: "/work/bio-union",
     seo: {
       title: "Bio Union — Smart Garment Ecosystem for Physiological Monitoring",
       description:
-        "Jacky's retrospective on co-founding Bio Union: a smart-garment ecosystem connecting biosensors, health data, and mobile software.",
+        "Jacky's retrospective on Bio Union: exploring a connected smart-garment system designed to support long-term ECG monitoring through clothing.",
       image: "/images/projects/bio-union/bio-union-og.jpg",
     },
   },
@@ -163,7 +160,7 @@ export const projects: Project[] = [
       "A practical artwork-pricing tool for independent artists and creative professionals. Artpresso simplifies a multi-variable pricing challenge into a clear, guided calculation workflow.",
     cardStatement:
       "Helping independent artists price their work with confidence through a clear, guided tool.",
-    year: "2024",
+    year: "Open beta since Dec 2025",
     status: "live",
     featured: true,
     featuredOrder: 3,
@@ -178,13 +175,11 @@ export const projects: Project[] = [
     roles: ["Product Designer", "Founder"],
     collaborators: [],
     heroImage: {
-      src: "/images/projects/artpresso/artpresso-hero.jpg",
+      src: "/images/projects/artpresso/artpresso_cover.png",
       alt: "Artpresso artwork pricing tool shown on a tablet, displaying a pricing calculator with fields for artwork dimensions, materials, and a calculated result",
-      width: 1400,
-      height: 900,
+      width: 3274,
+      height: 2517,
       provenance: "ai-assisted",
-      disclosure:
-        "AI-assisted visualization created in 2026 based on the live Artpresso product.",
     },
     liveUrl: "https://artpresso.westside-union.com/",
     caseStudyPath: "/work/artpresso",
