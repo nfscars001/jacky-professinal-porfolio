@@ -4,6 +4,7 @@ import { Hero } from "@/components/home/hero";
 import { FeaturedProjects } from "@/components/home/featured-projects";
 import { CapabilityGroups } from "@/components/home/capability-groups";
 import { CareerJourney } from "@/components/home/career-journey";
+import { SelectedProjects } from "@/components/home/selected-projects";
 import { AboutPreview } from "@/components/home/about-preview";
 import { ContactCTA } from "@/components/home/contact-cta";
 
@@ -25,6 +26,7 @@ export default function HomePage() {
       <FeaturedProjects />
       <CapabilityGroups />
       <CareerJourney />
+      <SelectedProjects />
       <AboutPreview />
       <ContactCTA />
     </>

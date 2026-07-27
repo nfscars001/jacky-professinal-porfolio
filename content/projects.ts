@@ -190,6 +190,98 @@ export const projects: Project[] = [
       image: "/images/projects/artpresso/artpresso-og.jpg",
     },
   },
+
+  // ---------------------------------------------------------------------------
+  // 4. Wei In Sight
+  // ---------------------------------------------------------------------------
+  {
+    slug: "wei-in-sight",
+    title: "Wei In Sight",
+    shortTitle: "Wei In Sight",
+    // TODO(content): Jacky to review and approve this summary
+    summary:
+      "A custom portfolio platform organizing visual art, music, mixed media, writing, story worlds, personal history, and collecting pathways within one immersive identity.",
+    cardStatement:
+      "A digital self-portrait where the body becomes the map to a connected creative world.",
+    // TODO(content): Jacky to confirm exact launch date
+    year: "Live",
+    status: "live",
+    featured: false,
+    featuredOrder: 1, // Ensures it appears first in non-featured lists
+    categories: ["digital-products", "brand-experience"],
+    capabilities: [
+      "Information Architecture",
+      "Interaction Design",
+      "Brand Direction",
+      "Content Modeling",
+    ],
+    // TODO(content): Jacky to confirm exact roles and collaborators
+    roles: ["Founder", "Artist", "Creative Direction", "Product & Experience Design", "Web Development"],
+    collaborators: [],
+    heroImage: {
+      src: "/images/projects/wei-in-sight/desktop-landing.jpg",
+      alt: "Wei In Sight desktop landing experience showing the body-as-map concept",
+      width: 1440,
+      height: 900,
+      provenance: "original",
+      // TODO(content): Replace placeholder with actual image when provided
+      disclosure: "Live production interface, captured in 2026.",
+    },
+    liveUrl: "https://www.weiinsight.com",
+    caseStudyPath: "/work/wei-in-sight",
+    seo: {
+      title: "Wei In Sight — The Creative Atlas of Jacky Ho",
+      description:
+        "Designing a multidisciplinary art practice as an explorable creative atlas.",
+      image: "/images/projects/wei-in-sight/wei-in-sight-og.jpg",
+    },
+  },
+
+  // ---------------------------------------------------------------------------
+  // 5. The Village Art Studio
+  // ---------------------------------------------------------------------------
+  {
+    slug: "the-village-art-studio",
+    title: "The Village Art Studio",
+    shortTitle: "TVAS",
+    // TODO(content): Jacky to review and approve this summary
+    summary:
+      "A community platform connecting artist stories, monthly showcases, podcast conversations, workshops, membership, and partnerships within one coherent service.",
+    cardStatement:
+      "Designing a bilingual platform for Toronto's local creative community.",
+    // TODO(content): Jacky to confirm exact launch date
+    year: "Live",
+    status: "live",
+    featured: false,
+    featuredOrder: 2, // Ensures it appears second in non-featured lists
+    categories: ["digital-products", "brand-experience"],
+    capabilities: [
+      "Product Strategy",
+      "Service Design",
+      "Content Systems",
+      "Localization",
+    ],
+    // TODO(content): Jacky to confirm exact roles and collaborators
+    roles: ["Founder", "Product Strategy", "Creative Direction", "Content & Experience Design", "Web Development"],
+    collaborators: [],
+    heroImage: {
+      src: "/images/projects/tvas/desktop-homepage.jpg",
+      alt: "The Village Art Studio homepage showcasing community platform features",
+      width: 1440,
+      height: 900,
+      provenance: "original",
+      // TODO(content): Replace placeholder with actual image when provided
+      disclosure: "Live production interface, captured in 2026.",
+    },
+    liveUrl: "https://www.tvas.ca",
+    caseStudyPath: "/work/the-village-art-studio",
+    seo: {
+      title: "The Village Art Studio — A Contemporary Creative Platform",
+      description:
+        "Designing a bilingual platform for Toronto's local creative community.",
+      image: "/images/projects/tvas/tvas-og.jpg",
+    },
+  },
 ];
 
 /* =============================================================================
