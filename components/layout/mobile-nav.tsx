@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { X, Menu } from "lucide-react";
 
@@ -22,11 +23,17 @@ interface MobileNavProps {
  *  - Focus moves into menu on open, returns to trigger on close
  *  - Body scroll locked while open
  *  - Menu closes on link selection
+ *  - Opaque background overlay using createPortal to prevent page bleed-through
  */
 export function MobileNav({ navLinks, artPracticeUrl }: MobileNavProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const openMenu = useCallback(() => {
     setIsOpen(true);
@@ -68,6 +75,158 @@ export function MobileNav({ navLinks, artPracticeUrl }: MobileNavProps) {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, closeMenu]);
 
+  const menuContent = isOpen ? (
+    <div
+      id="mobile-menu"
+      ref={menuRef}
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation menu"
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        width: "100vw",
+        height: "100dvh",
+        zIndex: 99999,
+        backgroundColor: "#f7f4f1",
+        background: "var(--color-canvas, #f7f4f1)",
+        display: "flex",
+        flexDirection: "column",
+        overflowY: "auto",
+      }}
+    >
+      {/* Top bar inside mobile menu overlay */}
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          height: "4rem",
+          paddingInline: "var(--gutter-tablet, 1.5rem)",
+          borderBottom: "1px solid var(--color-line)",
+          backgroundColor: "#f7f4f1",
+          background: "var(--color-canvas, #f7f4f1)",
+        }}
+      >
+        <Link
+          href="/"
+          onClick={closeMenu}
+          aria-label="Jacky Ho — home"
+          style={{
+            fontFamily: "var(--font-syne)",
+            fontWeight: 800,
+            fontSize: "1.125rem",
+            color: "var(--color-ink)",
+            textDecoration: "none",
+            letterSpacing: "-0.02em",
+            whiteSpace: "nowrap",
+          }}
+        >
+          Jacky Ho
+        </Link>
+        <button
+          onClick={closeMenu}
+          aria-label="Close navigation menu"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "44px",
+            height: "44px",
+            background: "none",
+            border: "1px solid var(--color-line)",
+            borderRadius: "var(--radius-sm)",
+            color: "var(--color-ink)",
+            cursor: "pointer",
+          }}
+        >
+          <X size={20} aria-hidden="true" />
+        </button>
+      </div>
+
+      {/* Nav links */}
+      <nav
+        aria-label="Mobile navigation"
+        style={{
+          padding: "2rem var(--gutter-tablet, 1.5rem)",
+          flex: 1,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "flex-start",
+        }}
+      >
+        <ul
+          style={{
+            listStyle: "none",
+            display: "flex",
+            flexDirection: "column",
+            gap: "0.5rem",
+          }}
+        >
+          {navLinks.map(({ href, label }) => (
+            <li key={href}>
+              <Link
+                href={href}
+                onClick={closeMenu}
+                style={{
+                  display: "block",
+                  padding: "1rem 0.5rem",
+                  fontFamily: "var(--font-syne)",
+                  fontWeight: 700,
+                  fontSize: "clamp(1.75rem, 7vw, 2.5rem)",
+                  color: "var(--color-ink)",
+                  textDecoration: "none",
+                  borderBottom: "1px solid var(--color-line)",
+                }}
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
+          <li>
+            <a
+              href={artPracticeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Art Practice, opens in a new tab"
+              onClick={closeMenu}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                padding: "1rem 0.5rem",
+                fontFamily: "var(--font-syne)",
+                fontWeight: 700,
+                fontSize: "clamp(1.75rem, 7vw, 2.5rem)",
+                color: "var(--color-ink)",
+                textDecoration: "none",
+                borderBottom: "1px solid var(--color-line)",
+              }}
+            >
+              Art Practice
+              <svg
+                aria-hidden="true"
+                width="20"
+                height="20"
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M2 10L10 2M5 2h5v5" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  ) : null;
+
   return (
     <>
       {/* Hamburger trigger — hidden on desktop via CSS in site-header.tsx */}
@@ -94,117 +253,9 @@ export function MobileNav({ navLinks, artPracticeUrl }: MobileNavProps) {
         {isOpen ? <X size={20} aria-hidden="true" /> : <Menu size={20} aria-hidden="true" />}
       </button>
 
-      {/* Menu panel */}
-      {isOpen && (
-        <div
-          id="mobile-menu"
-          ref={menuRef}
-          role="dialog"
-          aria-modal="true"
-          aria-label="Navigation menu"
-          style={{
-            position: "fixed",
-            inset: 0,
-            zIndex: 200,
-            backgroundColor: "var(--color-canvas)",
-            display: "flex",
-            flexDirection: "column",
-            padding: "1.5rem",
-          }}
-        >
-          {/* Close button at top */}
-          <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "2rem" }}>
-            <button
-              onClick={closeMenu}
-              aria-label="Close navigation menu"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "44px",
-                height: "44px",
-                background: "none",
-                border: "1px solid var(--color-line)",
-                borderRadius: "var(--radius-sm)",
-                color: "var(--color-ink)",
-                cursor: "pointer",
-              }}
-            >
-              <X size={20} aria-hidden="true" />
-            </button>
-          </div>
-
-          {/* Nav links */}
-          <nav aria-label="Mobile navigation">
-            <ul
-              style={{
-                listStyle: "none",
-                display: "flex",
-                flexDirection: "column",
-                gap: "0.25rem",
-              }}
-            >
-              {navLinks.map(({ href, label }) => (
-                <li key={href}>
-                  <Link
-                    href={href}
-                    onClick={closeMenu}
-                    style={{
-                      display: "block",
-                      padding: "1rem 0.5rem",
-                      fontFamily: "var(--font-syne)",
-                      fontWeight: 700,
-                      fontSize: "clamp(1.5rem, 6vw, 2.25rem)",
-                      color: "var(--color-ink)",
-                      textDecoration: "none",
-                      borderBottom: "1px solid var(--color-line)",
-                    }}
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <a
-                  href={artPracticeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Art Practice, opens in a new tab"
-                  onClick={closeMenu}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "0.5rem",
-                    padding: "1rem 0.5rem",
-                    fontFamily: "var(--font-syne)",
-                    fontWeight: 700,
-                    fontSize: "clamp(1.5rem, 6vw, 2.25rem)",
-                    color: "var(--color-ink)",
-                    textDecoration: "none",
-                    borderBottom: "1px solid var(--color-line)",
-                  }}
-                >
-                  Art Practice
-                  <svg
-                    aria-hidden="true"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 12 12"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M2 10L10 2M5 2h5v5" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-        </div>
-      )}
+      {/* Render overlay portal when open */}
+      {mounted && menuContent ? createPortal(menuContent, document.body) : null}
     </>
   );
 }
+
