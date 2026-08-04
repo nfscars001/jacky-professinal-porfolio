@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { generatePageMetadata } from "@/lib/metadata";
 import { Hero } from "@/components/home/hero";
 import { FeaturedProjects } from "@/components/home/featured-projects";
+
 import { CapabilityGroups } from "@/components/home/capability-groups";
 import { CareerJourney } from "@/components/home/career-journey";
 import { AboutPreview } from "@/components/home/about-preview";

@@ -22,20 +22,19 @@ export function TVASCaseStudy() {
           <li><strong>Muse & Medium</strong> podcast conversations</li>
           <li><strong>Monthly artist showcases</strong></li>
           <li><strong>Artist-led workshops</strong> and connection experiences</li>
-          <li><strong>Village Members</strong></li>
+          <li><strong>Village Members</strong> directory</li>
           <li><strong>Artist advocacy</strong> and application pathways</li>
           <li><strong>Venue and brand partnerships</strong></li>
         </ul>
       </div>
 
       <MediaFigure
-        // TODO(content): Add diagram link when provided
-        src="/images/projects/tvas/platform-ecosystem.svg"
-        alt="Platform ecosystem and audience-to-action matrix"
-        width={1200}
-        height={600}
+        src="/images/projects/the-village-art-studio/tvas-platform-ecosystem.png"
+        alt="Platform ecosystem showing podcast, showcase, workshops, advocacy, and partnerships"
+        width={2880}
+        height={1618}
         layout="full"
-        caption="Platform architecture reconstructed in 2026 from the live product and project notes."
+        caption="Platform service model connecting distinct audience touchpoints into a unified experience."
       />
 
       <div className="container section">
@@ -49,43 +48,65 @@ export function TVASCaseStudy() {
       </div>
 
       <MediaFigure
-        // TODO(content): Add real screenshot link when provided
-        src="/images/projects/tvas/showcase-landing.jpg"
-        alt="The Village Art Studio Showcase landing page"
-        width={1440}
-        height={900}
+        src="/images/projects/the-village-art-studio/tvas-showcase.png"
+        alt="The Village Art Studio Showcase featuring artist spotlight"
+        width={2880}
+        height={1618}
         layout="full"
-        caption="Live production interface, captured in 2026."
+        caption="Artist Spotlight program featuring monthly dedicated coverage and artist narrative."
       />
+
+      <div className="container section">
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "2rem" }}>
+          <MediaFigure
+            src="/images/projects/the-village-art-studio/tvas-showcase-2.png"
+            alt="Creative Collective artist member directory"
+            width={2880}
+            height={1618}
+            layout="full"
+            caption="Village Members directory showcasing the broader creative collective."
+          />
+          <MediaFigure
+            src="/images/projects/the-village-art-studio/tvas-showcase-3.png"
+            alt="Intimate artist workshops and experiences listing"
+            width={2880}
+            height={1618}
+            layout="full"
+            caption="Artist-led connection workshops and gathering experiences."
+          />
+        </div>
+      </div>
 
       <div className="container section">
         <h2>Bilingual experience</h2>
         <p>
           To serve a broader community, TVAS features a fully bilingual English/French experience. 
-          The platform exposes corresponding `/en/...` and `/fr/...` routes and preserves the user's current context when switching languages.
-          This required careful localization of navigation, calls to action, and dynamic content, alongside SEO considerations for canonical and `hreflang` tags.
+          The platform exposes corresponding <code>/en/...</code> and <code>/fr/...</code> routes and preserves the user&apos;s current context when switching languages.
+        </p>
+        <p>
+          This required careful localization of navigation, calls to action, and dynamic content, alongside SEO considerations for canonical and <code>hreflang</code> tags.
         </p>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem", marginBottom: "3rem" }}>
-        <MediaFigure
-          // TODO(content): Add real screenshot link when provided
-          src="/images/projects/tvas/english-version.jpg"
-          alt="English version of the page"
-          width={700}
-          height={800}
-          layout="full"
-          caption="English route."
-        />
-        <MediaFigure
-          // TODO(content): Add real screenshot link when provided
-          src="/images/projects/tvas/french-version.jpg"
-          alt="French version of the page"
-          width={700}
-          height={800}
-          layout="full"
-          caption="French route."
-        />
+      <div className="container section">
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "2rem" }}>
+          <MediaFigure
+            src="/images/projects/the-village-art-studio/English-route.png"
+            alt="English route interface for The Village Art Studio"
+            width={2880}
+            height={1618}
+            layout="full"
+            caption="English route (/en)."
+          />
+          <MediaFigure
+            src="/images/projects/the-village-art-studio/French-route.png"
+            alt="French route interface for The Village Art Studio"
+            width={2880}
+            height={1618}
+            layout="full"
+            caption="French route (/fr)."
+          />
+        </div>
       </div>
 
       <div className="container section">
@@ -97,51 +118,49 @@ export function TVASCaseStudy() {
       </div>
 
       <MediaFigure
-        // TODO(content): Add real screenshot link when provided
-        src="/images/projects/tvas/podcast-landing.jpg"
-        alt="Podcast landing page with embedded media treatment"
-        width={1440}
-        height={900}
+        src="/images/projects/the-village-art-studio/tvas-multimedia-integration.png"
+        alt="Podcast landing page with video episode gallery"
+        width={2880}
+        height={1618}
         layout="full"
-        caption="Live production interface, captured in 2026."
+        caption="Muse & Medium podcast episode gallery featuring direct video conversations."
       />
 
       <div className="container section">
         <h2>Conversion pathways & responsive design</h2>
         <p>
-          Each audience segment has a dedicated pathway—from "Explore Experiences" and "Listen to the Podcast" to "Apply to the Platform" and "Partner With Us." These calls to action were meticulously designed to convert across all viewports.
+          Each audience segment has a dedicated pathway—from &quot;Explore Experiences&quot; and &quot;Listen to the Podcast&quot; to &quot;Apply to the Platform&quot; and &quot;Partner With Us.&quot; These calls to action were meticulously designed to convert across all viewports.
         </p>
         <p>
           Extensive testing ensured long English and French labels wrapped correctly, embedded video aspect ratios were maintained, and the bilingual switch remained intuitive on mobile.
         </p>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "2rem", marginBottom: "3rem" }}>
-        <MediaFigure
-          // TODO(content): Add real mobile screenshot link when provided
-          src="/images/projects/tvas/mobile-homepage.jpg"
-          alt="Mobile homepage experience"
-          width={390}
-          height={844}
-          layout="full"
-          caption="Live production interface (mobile), captured in 2026."
-        />
-        <MediaFigure
-          // TODO(content): Add real mobile screenshot link when provided
-          src="/images/projects/tvas/mobile-language-switch.jpg"
-          alt="Mobile language switch interaction"
-          width={390}
-          height={844}
-          layout="full"
-          caption="Live production interface (mobile), captured in 2026."
-        />
+      <div className="container section">
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2rem", maxWidth: "800px", margin: "0 auto" }}>
+          <MediaFigure
+            src="/images/projects/the-village-art-studio/interface-mobile.PNG"
+            alt="Mobile homepage experience"
+            width={1170}
+            height={2532}
+            layout="full"
+            caption="Mobile landing view with primary CTA pathway."
+          />
+          <MediaFigure
+            src="/images/projects/the-village-art-studio/language-switch-interface-mobile.PNG"
+            alt="Mobile navigation drawer and language switch"
+            width={1170}
+            height={2532}
+            layout="full"
+            caption="Mobile navigation menu with seamless language switcher."
+          />
+        </div>
       </div>
 
       <div className="container section">
         <div style={{ padding: "2rem", backgroundColor: "var(--color-surface)", borderRadius: "8px", border: "1px solid var(--color-line)", marginTop: "3rem" }}>
           <h3 style={{ fontSize: "var(--step-h4)", marginBottom: "1rem", fontFamily: "var(--font-syne)" }}>Outcome and Reflection</h3>
           <p style={{ margin: 0, color: "var(--color-ink)", fontSize: "var(--step-body)", lineHeight: 1.6 }}>
-            {/* TODO(content): Verify outcomes with Jacky */}
             The Village Art Studio launched as a robust platform that successfully bridges the gap between artists and the community. By structuring multiple programs into a coherent service architecture, it allows ongoing content operations to run smoothly for a small team. The project has reinforced my understanding of scalable service design and the importance of clear content governance in community-focused platforms.
           </p>
         </div>

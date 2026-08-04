@@ -80,7 +80,7 @@ export const projects: Project[] = [
     year: "Open beta since March 2026",
     status: "in-development",
     featured: true,
-    featuredOrder: 1,
+    featuredOrder: 2, // Second card in Selected Work (Nexus leads)
     categories: ["digital-products", "ai-automation"],
     capabilities: ["Product Strategy", "AI Workflows", "SaaS UX", "Business Design"],
     // TODO(content): Jacky to confirm his exact role title and collaborators
@@ -119,7 +119,7 @@ export const projects: Project[] = [
     year: "2015–2023",
     status: "previous-venture",
     featured: true,
-    featuredOrder: 2,
+    featuredOrder: 3, // Third card in Selected Work
     categories: ["physical-innovation", "digital-products"],
     capabilities: [
       "Wearable Technology",
@@ -162,8 +162,8 @@ export const projects: Project[] = [
       "Helping independent artists price their work with confidence through a clear, guided tool.",
     year: "Open beta since Dec 2025",
     status: "live",
-    featured: true,
-    featuredOrder: 3,
+    featured: false,
+    featuredOrder: 4, // Removed from Selected Work; available in /work index
     categories: ["digital-products", "brand-experience"],
     capabilities: [
       "Product Design",
@@ -192,7 +192,52 @@ export const projects: Project[] = [
   },
 
   // ---------------------------------------------------------------------------
-  // 4. Wei In Sight
+  // 4. Project Nexus
+  // ---------------------------------------------------------------------------
+  {
+    slug: "project-nexus",
+    title: "Project Nexus",
+    shortTitle: "Nexus",
+    // TODO(content): Jacky to review and approve this summary
+    summary:
+      "A modular AI framework system designed to coordinate specialized capabilities, shared business context, permissions, approvals, and safe fallback behind one consistent user experience. The live marketing site is in production; the underlying framework remains in development.",
+    cardStatement:
+      "One coherent business experience over interchangeable AI capabilities—designed for modularity, transparency, and trust.",
+    // TODO(content): Jacky to confirm exact start year or period
+    year: "Started 2025",
+    status: "in-development",
+    featured: true,
+    featuredOrder: 1, // Lead card in Selected Work (full-width on desktop)
+    categories: ["ai-automation", "digital-products"],
+    capabilities: [
+      "AI Product Strategy",
+      "System Architecture",
+      "Experience Design",
+      "Creative Direction",
+    ],
+    // TODO(content): Jacky to confirm exact role titles and collaborators
+    roles: ["Founder", "Product Strategy", "System Architecture", "Experience Design", "Creative Direction"],
+    collaborators: [],
+    heroImage: {
+      src: "/images/projects/nexus_ai/nexus_cover.png",
+      alt: "Project Nexus marketing site hero: large editorial headline 'Your business runs, even when you sleep.' on an off-white background with iridescent geometric forms",
+      width: 1440,
+      height: 900,
+      provenance: "original",
+      disclosure: "Live public marketing interface, captured in 2026.",
+    },
+    liveUrl: "https://nexus.westside-union.com",
+    caseStudyPath: "/work/project-nexus",
+    seo: {
+      title: "Project Nexus — Modular AI Framework System",
+      description:
+        "How Jacky designed one coherent business-facing experience over interchangeable AI capabilities—with modularity, shared context, human approvals, and safe fallback as core principles.",
+      image: "/images/projects/nexus_ai/nexus_cover.png",
+    },
+  },
+
+  // ---------------------------------------------------------------------------
+  // 5. Wei In Sight
   // ---------------------------------------------------------------------------
   {
     slug: "wei-in-sight",
@@ -207,7 +252,7 @@ export const projects: Project[] = [
     year: "Live",
     status: "live",
     featured: false,
-    featuredOrder: 1, // Ensures it appears first in non-featured lists
+    featuredOrder: 1, // First in the non-featured /work index list
     categories: ["digital-products", "brand-experience"],
     capabilities: [
       "Information Architecture",
@@ -219,12 +264,11 @@ export const projects: Project[] = [
     roles: ["Founder", "Artist", "Creative Direction", "Product & Experience Design", "Web Development"],
     collaborators: [],
     heroImage: {
-      src: "/images/projects/wei-in-sight/desktop-landing.jpg",
+      src: "/images/projects/wei-in-sight/cover.png",
       alt: "Wei In Sight desktop landing experience showing the body-as-map concept",
-      width: 1440,
-      height: 900,
+      width: 2940,
+      height: 1619,
       provenance: "original",
-      // TODO(content): Replace placeholder with actual image when provided
       disclosure: "Live production interface, captured in 2026.",
     },
     liveUrl: "https://www.weiinsight.com",
@@ -233,7 +277,7 @@ export const projects: Project[] = [
       title: "Wei In Sight — The Creative Atlas of Jacky Ho",
       description:
         "Designing a multidisciplinary art practice as an explorable creative atlas.",
-      image: "/images/projects/wei-in-sight/wei-in-sight-og.jpg",
+      image: "/images/projects/wei-in-sight/cover.png",
     },
   },
 
@@ -253,7 +297,7 @@ export const projects: Project[] = [
     year: "Live",
     status: "live",
     featured: false,
-    featuredOrder: 2, // Ensures it appears second in non-featured lists
+    featuredOrder: 2, // Third in the Selected Projects section (after Nexus at 0, Wei In Sight at 1)
     categories: ["digital-products", "brand-experience"],
     capabilities: [
       "Product Strategy",
@@ -265,12 +309,11 @@ export const projects: Project[] = [
     roles: ["Founder", "Product Strategy", "Creative Direction", "Content & Experience Design", "Web Development"],
     collaborators: [],
     heroImage: {
-      src: "/images/projects/tvas/desktop-homepage.jpg",
-      alt: "The Village Art Studio homepage showcasing community platform features",
-      width: 1440,
-      height: 900,
+      src: "/images/projects/the-village-art-studio/tvas-cover.png",
+      alt: "The Village Art Studio homepage hero interface",
+      width: 2880,
+      height: 1618,
       provenance: "original",
-      // TODO(content): Replace placeholder with actual image when provided
       disclosure: "Live production interface, captured in 2026.",
     },
     liveUrl: "https://www.tvas.ca",
@@ -308,3 +351,9 @@ export const getProjectBySlug = (slug: string): Project | undefined =>
 
 /** All published slugs (for static generation) */
 export const getAllSlugs = (): string[] => projects.map((p) => p.slug);
+
+/** Non-featured (selected) projects in display order — used by the Selected Projects section */
+export const getSelectedProjects = (): Project[] =>
+  projects
+    .filter((p) => !p.featured)
+    .sort((a, b) => (a.featuredOrder ?? 99) - (b.featuredOrder ?? 99));

@@ -10,6 +10,7 @@ import { ProjectPagination } from "@/components/case-study/project-pagination";
 import { ArtpressoCaseStudy } from "@/content/case-studies/artpresso";
 import { BioUnionCaseStudy } from "@/content/case-studies/bio-union";
 import { PaviqoCaseStudy } from "@/content/case-studies/paviqo";
+import { ProjectNexusCaseStudy } from "@/content/case-studies/project-nexus";
 import { WeiInSightCaseStudy } from "@/content/case-studies/wei-in-sight";
 import { TVASCaseStudy } from "@/content/case-studies/the-village-art-studio";
 
@@ -62,6 +63,11 @@ export default async function CaseStudyPage(props: Props) {
       problem = "Automotive dealerships were losing sales due to lead leakage outside business hours or during high volume periods.";
       duration = "Open beta since March 2026";
       ContentComponent = PaviqoCaseStudy;
+      break;
+    case "project-nexus":
+      problem = "Repetitive business coordination consumed disproportionate owner time, yet existing tools required either significant technical setup or produced disconnected, generic experiences.";
+      duration = "In development (marketing site live)";
+      ContentComponent = ProjectNexusCaseStudy;
       break;
     case "wei-in-sight":
       problem = "Multiple disciplines, formats, and audiences could easily feel scattered without a unifying architecture.";

@@ -121,27 +121,7 @@ export function SiteHeader() {
             </svg>
           </a>
 
-          {/* Résumé download — visually distinct */}
-          <a
-            href="/documents/jacky-ho-resume.pdf"
-            download="Jacky-Ho-Resume.pdf"
-            aria-label="Download Jacky Ho résumé PDF"
-            style={{
-              marginLeft: "0.5rem",
-              padding: "0.5rem 1rem",
-              backgroundColor: "var(--color-ink)",
-              color: "var(--color-canvas)",
-              fontSize: "var(--step-small)",
-              fontWeight: 600,
-              textDecoration: "none",
-              borderRadius: "var(--radius-sm)",
-              whiteSpace: "nowrap",
-              transition: "background-color var(--transition-base)",
-            }}
-            className="resume-btn"
-          >
-            Résumé ↓
-          </a>
+
         </nav>
 
         {/* Mobile nav (client component) */}
@@ -159,9 +139,7 @@ export function SiteHeader() {
           color: var(--color-ink);
           background-color: rgba(23, 20, 23, 0.06);
         }
-        .resume-btn:hover {
-          background-color: var(--color-accent);
-        }
+
       `}</style>
     </header>
   );

@@ -42,31 +42,7 @@ export default function ExperiencePage() {
           A history of leading product design, connecting technology with human experience, and building cross-functional teams.
         </p>
 
-        <div style={{ marginTop: "1rem" }}>
-          <a
-            href="/documents/jacky-ho-resume.pdf"
-            download="Jacky-Ho-Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-              padding: "0.75rem 1.5rem",
-              backgroundColor: "var(--color-ink)",
-              color: "var(--color-canvas)",
-              borderRadius: "999px",
-              fontFamily: "var(--font-geist)",
-              fontWeight: 600,
-              fontSize: "var(--step-small)",
-              textDecoration: "none",
-              transition: "background-color var(--transition-base)",
-            }}
-            className="resume-button"
-          >
-            Download Résumé ↓
-          </a>
-        </div>
+
       </header>
 
       <div className="timeline">
@@ -159,9 +135,7 @@ export default function ExperiencePage() {
       </div>
 
       <style>{`
-        .resume-button:hover {
-          background-color: var(--color-accent);
-        }
+
 
         .timeline {
           position: relative;

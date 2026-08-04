@@ -33,7 +33,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           style={{
             position: "relative",
             width: "100%",
-            aspectRatio: "4 / 3",
+            aspectRatio: "16 / 9",
             borderRadius: "var(--radius-md)",
             overflow: "hidden",
             border: "1px solid var(--color-line)",
@@ -48,7 +48,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             sizes="(max-width: 639px) 100vw, (max-width: 1199px) 50vw, 33vw"
             style={{
               objectFit: "cover",
-              objectPosition: "center",
+              objectPosition: "top",
               transition: "transform 240ms ease",
             }}
             className="project-image"

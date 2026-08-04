@@ -44,21 +44,19 @@ export function WeiInSightCaseStudy() {
       </div>
 
       <MediaFigure
-        // TODO(content): Add real screenshot link when provided
-        src="/images/projects/wei-in-sight/navigation-selected.jpg"
+        src="/images/projects/wei-in-sight/Screenshot 2026-07-30 at 6.58.15 AM.png"
         alt="Wei In Sight navigation with a territory selected"
-        width={1440}
-        height={900}
+        width={2940}
+        height={1615}
         layout="full"
         caption="Live production interface, captured in 2026."
       />
 
       <MediaFigure
-        // TODO(content): Add diagram link when provided
-        src="/images/projects/wei-in-sight/architecture-diagram.svg"
+        src="/images/projects/wei-in-sight/Screenshot 2026-07-30 at 6.58.33 AM.png"
         alt="Seven-territory information architecture diagram"
-        width={1200}
-        height={600}
+        width={2940}
+        height={1618}
         layout="full"
         caption="Information architecture reconstructed in 2026 from the live product."
       />
@@ -74,11 +72,10 @@ export function WeiInSightCaseStudy() {
       </div>
 
       <MediaFigure
-        // TODO(content): Add real screenshot link when provided
-        src="/images/projects/wei-in-sight/discipline-cover.jpg"
+        src="/images/projects/wei-in-sight/Screenshot 2026-07-30 at 6.59.11 AM.png"
         alt="Representative 21:9 discipline cover"
-        width={1440}
-        height={900}
+        width={2940}
+        height={1619}
         layout="full"
         caption="Live production interface, captured in 2026."
       />
@@ -91,11 +88,10 @@ export function WeiInSightCaseStudy() {
       </div>
 
       <MediaFigure
-        // TODO(content): Add real screenshot link when provided
-        src="/images/projects/wei-in-sight/collect-path.jpg"
+        src="/images/projects/wei-in-sight/Screenshot 2026-07-30 at 6.59.23 AM.png"
         alt="Collect or inquire path on Wei In Sight"
-        width={1440}
-        height={900}
+        width={2940}
+        height={1622}
         layout="full"
         caption="Live production interface, captured in 2026."
       />
@@ -112,22 +108,36 @@ export function WeiInSightCaseStudy() {
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "2rem", marginBottom: "3rem" }}>
         <MediaFigure
-          // TODO(content): Add real mobile screenshot link when provided
-          src="/images/projects/wei-in-sight/mobile-landing.jpg"
+          src="/images/projects/wei-in-sight/mobile_interface.PNG"
           alt="Mobile landing experience"
-          width={390}
-          height={844}
+          width={1206}
+          height={2622}
           layout="full"
           caption="Live production interface (mobile), captured in 2026."
         />
         <MediaFigure
-          // TODO(content): Add real mobile screenshot link when provided
-          src="/images/projects/wei-in-sight/mobile-navigation.jpg"
+          src="/images/projects/wei-in-sight/mobile_interface_2.PNG"
+          alt="Mobile landing experience part 2"
+          width={1206}
+          height={2622}
+          layout="full"
+          caption="Live production interface (mobile details), captured in 2026."
+        />
+        <MediaFigure
+          src="/images/projects/wei-in-sight/mobile_navigation.PNG"
           alt="Mobile navigation and content page"
-          width={390}
-          height={844}
+          width={1206}
+          height={2622}
           layout="full"
           caption="Live production interface (mobile navigation), captured in 2026."
+        />
+        <MediaFigure
+          src="/images/projects/wei-in-sight/mobile_navigation_2.PNG"
+          alt="Mobile navigation and content page part 2"
+          width={1206}
+          height={2622}
+          layout="full"
+          caption="Live production interface (mobile secondary navigation), captured in 2026."
         />
       </div>
 

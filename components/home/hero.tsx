@@ -93,23 +93,7 @@ export function Hero() {
             >
               View selected work
             </Link>
-            <a
-              href="/documents/jacky-ho-resume.pdf"
-              download="Jacky-Ho-Resume.pdf"
-              style={{
-                padding: "0.875rem 1.75rem",
-                border: "1px solid var(--color-line)",
-                color: "var(--color-ink)",
-                fontWeight: 500,
-                fontSize: "var(--step-small)",
-                textDecoration: "none",
-                borderRadius: "var(--radius-sm)",
-                transition: "background-color var(--transition-base), color var(--transition-base)",
-              }}
-              className="secondary-cta"
-            >
-              Download résumé ↓
-            </a>
+
           </div>
 
           <p

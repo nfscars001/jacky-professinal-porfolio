@@ -203,28 +203,6 @@ export function MobileNav({ navLinks, artPracticeUrl }: MobileNavProps) {
             </ul>
           </nav>
 
-          {/* Résumé CTA at bottom */}
-          <div style={{ marginTop: "auto", paddingTop: "2rem" }}>
-            <a
-              href="/documents/jacky-ho-resume.pdf"
-              download="Jacky-Ho-Resume.pdf"
-              onClick={closeMenu}
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                padding: "0.875rem 1.5rem",
-                backgroundColor: "var(--color-ink)",
-                color: "var(--color-canvas)",
-                fontWeight: 600,
-                fontSize: "var(--step-small)",
-                textDecoration: "none",
-                borderRadius: "var(--radius-sm)",
-              }}
-            >
-              Download Résumé ↓
-            </a>
-          </div>
         </div>
       )}
     </>
