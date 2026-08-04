@@ -203,8 +203,7 @@ export const projects: Project[] = [
       "A modular AI framework system designed to coordinate specialized capabilities, shared business context, permissions, approvals, and safe fallback behind one consistent user experience. The live marketing site is in production; the underlying framework remains in development.",
     cardStatement:
       "One coherent business experience over interchangeable AI capabilities—designed for modularity, transparency, and trust.",
-    // TODO(content): Jacky to confirm exact start year or period
-    year: "Started 2025",
+    year: "Launch since July 2026",
     status: "in-development",
     featured: true,
     featuredOrder: 1, // Lead card in Selected Work (full-width on desktop)
