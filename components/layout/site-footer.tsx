@@ -152,6 +152,20 @@ export function SiteFooter() {
               >
                 LinkedIn ↗
               </a>
+              <a
+                href="https://github.com/nfscars001"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile, opens in a new tab"
+                style={{
+                  color: "var(--color-accent)",
+                  fontSize: "var(--step-small)",
+                  fontWeight: 500,
+                  textDecoration: "none",
+                }}
+              >
+                GitHub ↗
+              </a>
             </div>
           </div>
 

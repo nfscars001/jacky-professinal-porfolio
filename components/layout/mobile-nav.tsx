@@ -13,6 +13,7 @@ interface NavLink {
 interface MobileNavProps {
   navLinks: readonly NavLink[];
   artPracticeUrl: string;
+  githubUrl: string;
 }
 
 /**
@@ -25,7 +26,7 @@ interface MobileNavProps {
  *  - Menu closes on link selection
  *  - Opaque background overlay using createPortal to prevent page bleed-through
  */
-export function MobileNav({ navLinks, artPracticeUrl }: MobileNavProps) {
+export function MobileNav({ navLinks, artPracticeUrl, githubUrl }: MobileNavProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
@@ -207,6 +208,42 @@ export function MobileNav({ navLinks, artPracticeUrl }: MobileNavProps) {
               }}
             >
               Art Practice
+              <svg
+                aria-hidden="true"
+                width="20"
+                height="20"
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M2 10L10 2M5 2h5v5" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile, opens in a new tab"
+              onClick={closeMenu}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                padding: "1rem 0.5rem",
+                fontFamily: "var(--font-syne)",
+                fontWeight: 700,
+                fontSize: "clamp(1.75rem, 7vw, 2.5rem)",
+                color: "var(--color-ink)",
+                textDecoration: "none",
+                borderBottom: "1px solid var(--color-line)",
+              }}
+            >
+              GitHub
               <svg
                 aria-hidden="true"
                 width="20"

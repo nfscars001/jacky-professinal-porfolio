@@ -8,6 +8,7 @@ const NAV_LINKS = [
 ] as const;
 
 const ART_PRACTICE_URL = "https://www.weiinsight.com";
+const GITHUB_URL = "https://github.com/nfscars001";
 
 /**
  * SiteHeader — fixed translucent header with desktop nav and mobile nav.
@@ -121,11 +122,46 @@ export function SiteHeader() {
             </svg>
           </a>
 
+          {/* GitHub external link */}
+          <a
+            href={GITHUB_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile, opens in a new tab"
+            style={{
+              padding: "0.5rem 0.75rem",
+              color: "var(--color-muted)",
+              fontSize: "var(--step-small)",
+              fontWeight: 500,
+              textDecoration: "none",
+              borderRadius: "6px",
+              display: "flex",
+              alignItems: "center",
+              gap: "0.25rem",
+              transition: "color var(--transition-base), background-color var(--transition-base)",
+            }}
+            className="nav-link"
+          >
+            GitHub
+            <svg
+              aria-hidden="true"
+              width="11"
+              height="11"
+              viewBox="0 0 12 12"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M2 10L10 2M5 2h5v5" />
+            </svg>
+          </a>
 
         </nav>
 
         {/* Mobile nav (client component) */}
-        <MobileNav navLinks={NAV_LINKS} artPracticeUrl={ART_PRACTICE_URL} />
+        <MobileNav navLinks={NAV_LINKS} artPracticeUrl={ART_PRACTICE_URL} githubUrl={GITHUB_URL} />
       </div>
 
       <style>{`
