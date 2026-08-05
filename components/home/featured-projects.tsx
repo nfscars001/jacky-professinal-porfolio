@@ -206,9 +206,9 @@ export function FeaturedProjects() {
                   >
                     Read case study
                   </Link>
-                  {project.liveUrl && (
+                  {(project.liveUrl || project.archiveUrl) && (
                     <a
-                      href={project.liveUrl}
+                      href={project.liveUrl || project.archiveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{

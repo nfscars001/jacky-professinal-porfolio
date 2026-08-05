@@ -139,6 +139,7 @@ export const projects: Project[] = [
       disclosure: "Bio Union pitch deck cover image.",
     },
     archiveUrl: "https://www.bio-union.io",
+    liveUrl: "https://www.bio-union.io",
     caseStudyPath: "/work/bio-union",
     seo: {
       title: "Bio Union — Smart Garment Ecosystem for Physiological Monitoring",
