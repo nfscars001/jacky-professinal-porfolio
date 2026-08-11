@@ -15,6 +15,9 @@ const eslintConfig = defineConfig([
     // Private template references — never linted, never committed
     "references/**",
     "private-references/**",
+    "generate-case-study-assets.js",
+    "generate-svgs.js",
+    "crop.js",
   ]),
 ]);
 

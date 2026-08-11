@@ -297,7 +297,7 @@ export const projects: Project[] = [
     year: "Live",
     status: "live",
     featured: false,
-    featuredOrder: 2, // Third in the Selected Projects section (after Nexus at 0, Wei In Sight at 1)
+    featuredOrder: 4, // Fourth in non-featured list
     categories: ["digital-products", "brand-experience"],
     capabilities: [
       "Product Strategy",
@@ -323,6 +323,102 @@ export const projects: Project[] = [
       description:
         "Designing a bilingual platform for Toronto's local creative community.",
       image: "/images/projects/tvas/tvas-og.jpg",
+    },
+  },
+
+  // ---------------------------------------------------------------------------
+  // 7. MCP Doctor
+  // ---------------------------------------------------------------------------
+  {
+    slug: "mcp-doctor",
+    title: "MCP Doctor",
+    shortTitle: "MCP Doctor",
+    summary:
+      "An open-source, local-first CLI that turns common MCP configuration failures into clear, actionable fixes.",
+    cardStatement:
+      "Inspecting MCP configuration files, identifying setup and security risks, and explaining exactly how to fix each finding.",
+    year: "2026",
+    status: "live",
+    featured: false,
+    featuredOrder: 1,
+    categories: ["ai-automation", "digital-products"],
+    capabilities: [
+      "Product Concept",
+      "System Architecture",
+      "CLI Design",
+      "Open-Source Engineering",
+    ],
+    roles: [
+      "Product Concept",
+      "System Architecture",
+      "CLI Design",
+      "Open-Source Engineering",
+    ],
+    collaborators: [],
+    heroImage: {
+      src: "/images/projects/mcp-doctor/mcp-doctor-hero-terminal.svg",
+      alt: "MCP Doctor CLI terminal output showing static diagnostics, errors, warnings, and exact repair recommendations",
+      width: 1200,
+      height: 700,
+      provenance: "original",
+      disclosure: "Terminal interface captured from MCP Doctor CLI v0.1.0.",
+    },
+    liveUrl: "https://github.com/WestsideUnion/mcp-doctor",
+    caseStudyPath: "/work/mcp-doctor",
+    seo: {
+      title: "MCP Doctor — Open-Source AI Tooling Case Study | Jacky Ho",
+      description:
+        "An open-source developer-tool case study covering the product concept, diagnostic architecture, CLI experience, structured findings, and local-first safety model behind MCP Doctor.",
+      image: "/images/projects/mcp-doctor/mcp-doctor-hero-terminal.svg",
+    },
+  },
+
+  // ---------------------------------------------------------------------------
+  // 8. Natalie Me Art Portfolio
+  // ---------------------------------------------------------------------------
+  {
+    slug: "natalie-me",
+    title: "Natalie Me Art Portfolio",
+    shortTitle: "Natalie Me",
+    summary:
+      "A calm, editorial artist portfolio with a private content-management experience behind it.",
+    cardStatement:
+      "Designing a quiet digital gallery and a self-managed content experience for a Toronto visual artist.",
+    year: "2026",
+    status: "live",
+    featured: false,
+    featuredOrder: 2,
+    categories: ["digital-products", "brand-experience"],
+    capabilities: [
+      "Product Strategy",
+      "UX/UI Design",
+      "Art Direction",
+      "Web Development",
+      "Content System",
+    ],
+    roles: [
+      "Product Strategy",
+      "UX/UI Design",
+      "Art Direction",
+      "Web Development",
+      "Content System",
+    ],
+    collaborators: [],
+    heroImage: {
+      src: "/images/projects/natalie-me/cover.JPG",
+      alt: "Natalie Me Art Portfolio cover interface showing the serene, editorial design language for visual artist Natalie Me",
+      width: 2388,
+      height: 1554,
+      provenance: "original",
+      disclosure: "Live production interface, captured in 2026.",
+    },
+    liveUrl: "https://natalie-me.tvas.ca",
+    caseStudyPath: "/work/natalie-me",
+    seo: {
+      title: "Natalie Me Art Portfolio — Client Website Case Study | Jacky Ho",
+      description:
+        "A client case study covering the strategy, art direction, UX, responsive portfolio, and private content-management experience created for Toronto visual artist Natalie Me.",
+      image: "/images/projects/natalie-me/cover.JPG",
     },
   },
 ];

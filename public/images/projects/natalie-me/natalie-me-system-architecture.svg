@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 350" width="100%" height="100%">
+  <defs>
+    <style>
+      .box { fill: #ffffff; stroke: #d6d3d1; stroke-width: 2; rx: 10; }
+      .dark-box { fill: #1c1917; stroke: #292524; stroke-width: 2; rx: 10; }
+      .text-title { font-family: -apple-system, sans-serif; font-size: 15px; font-weight: 600; fill: #1c1917; text-anchor: middle; }
+      .dark-text-title { font-family: -apple-system, sans-serif; font-size: 15px; font-weight: 600; fill: #f5f5f4; text-anchor: middle; }
+      .text-desc { font-family: -apple-system, sans-serif; font-size: 12px; fill: #78716c; text-anchor: middle; }
+      .dark-text-desc { font-family: -apple-system, sans-serif; font-size: 12px; fill: #a8a29e; text-anchor: middle; }
+      .arrow { stroke: #d97706; stroke-width: 2; fill: none; }
+      .arrow-head { fill: #d97706; }
+      .label { font-family: 'SF Mono', monospace; font-size: 11px; fill: #b45309; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" class="arrow-head" />
+    </marker>
+  </defs>
+
+  <!-- Row 1: Private Side -->
+  <rect x="40" y="40" width="220" height="90" class="dark-box" />
+  <text x="150" y="75" class="dark-text-title">Artist Dashboard</text>
+  <text x="150" y="98" class="dark-text-desc">Private Auth &amp; Form Controls</text>
+
+  <!-- Arrow to Storage -->
+  <line x1="260" y1="85" x2="360" y2="85" class="arrow" marker-end="url(#arrow)" />
+  <text x="310" y="75" class="label" text-anchor="middle">MUTATE</text>
+
+  <!-- Center: Database & Storage -->
+  <rect x="360" y="40" width="260" height="90" class="box" />
+  <text x="490" y="75" class="text-title">Structured Content &amp; Media</text>
+  <text x="490" y="98" class="text-desc">Database Records &amp; Storage</text>
+
+  <!-- Arrow to Public Site -->
+  <line x1="620" y1="85" x2="720" y2="85" class="arrow" marker-end="url(#arrow)" />
+  <text x="670" y="75" class="label" text-anchor="middle">FETCH</text>
+
+  <!-- Right: Next.js Public App -->
+  <rect x="720" y="40" width="240" height="90" class="box" />
+  <text x="840" y="75" class="text-title">Next.js Public Portfolio</text>
+  <text x="840" y="98" class="text-desc">ISR &amp; Cached Dynamic Views</text>
+
+  <!-- Flow to Visitor Views -->
+  <line x1="840" y1="130" x2="840" y2="190" class="arrow" marker-end="url(#arrow)" />
+
+  <!-- Bottom Row: Public Views -->
+  <rect x="60" y="210" width="200" height="70" class="box" />
+  <text x="160" y="242" class="text-title">Gallery View</text>
+  <text x="160" y="262" class="text-desc">Artwork, Mediums, Alt Text</text>
+
+  <rect x="290" y="210" width="200" height="70" class="box" />
+  <text x="390" y="242" class="text-title">Biography</text>
+  <text x="390" y="262" class="text-desc">Story, Awards, Heritage</text>
+
+  <rect x="520" y="210" width="200" height="70" class="box" />
+  <text x="620" y="242" class="text-title">Events &amp; Shows</text>
+  <text x="620" y="262" class="text-desc">Dates, Venues, Outgoing Links</text>
+
+  <rect x="750" y="210" width="200" height="70" class="box" />
+  <text x="850" y="242" class="text-title">Contact &amp; Inquiries</text>
+  <text x="850" y="262" class="text-desc">Commissions &amp; Outreach</text>
+
+  <!-- Connect Bottom Views -->
+  <line x1="840" y1="190" x2="160" y2="190" stroke="#d97706" stroke-width="2" />
+  <line x1="160" y1="190" x2="160" y2="210" class="arrow" marker-end="url(#arrow)" />
+  <line x1="390" y1="190" x2="390" y2="210" class="arrow" marker-end="url(#arrow)" />
+  <line x1="620" y1="190" x2="620" y2="210" class="arrow" marker-end="url(#arrow)" />
+  <line x1="850" y1="190" x2="850" y2="210" class="arrow" marker-end="url(#arrow)" />
+</svg>

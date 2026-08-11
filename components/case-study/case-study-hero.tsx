@@ -46,45 +46,50 @@ export function CaseStudyHero({ project }: CaseStudyHeroProps) {
             {project.summary}
           </p>
 
-          {project.archiveUrl && (
-            <div style={{ marginTop: "1.5rem" }}>
-              <a
-                href={project.archiveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Visit ${project.title} live site, opens in a new tab`}
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "0.375rem",
-                  padding: "0.625rem 1.25rem",
-                  border: "1px solid var(--color-accent)",
-                  borderRadius: "var(--radius-sm)",
-                  color: "var(--color-accent)",
-                  fontSize: "var(--step-small)",
-                  fontWeight: 500,
-                  textDecoration: "none",
-                  transition: "background-color var(--transition-base), color var(--transition-base)",
-                }}
-                className="live-site-link"
-              >
-                Visit live site
-                <svg
-                  aria-hidden="true"
-                  width="11"
-                  height="11"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+          {(() => {
+            const url = project.liveUrl || project.archiveUrl;
+            if (!url) return null;
+            const isGithub = url.includes("github.com");
+            return (
+              <div style={{ marginTop: "1.5rem" }}>
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${isGithub ? "View" : "Visit"} ${project.title} live site, opens in a new tab`}
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "0.375rem",
+                    padding: "0.625rem 1.25rem",
+                    border: "1px solid var(--color-accent)",
+                    borderRadius: "var(--radius-sm)",
+                    color: "var(--color-accent)",
+                    fontSize: "var(--step-small)",
+                    fontWeight: 500,
+                    textDecoration: "none",
+                    transition: "background-color var(--transition-base), color var(--transition-base)",
+                  }}
+                  className="live-site-link"
                 >
-                  <path d="M2 10L10 2M5 2h5v5" />
-                </svg>
-              </a>
-            </div>
-          )}
+                  {isGithub ? "View on GitHub" : "Visit live site"}
+                  <svg
+                    aria-hidden="true"
+                    width="11"
+                    height="11"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M2 10L10 2M5 2h5v5" />
+                  </svg>
+                </a>
+              </div>
+            );
+          })()}
         </div>
       </div>
 

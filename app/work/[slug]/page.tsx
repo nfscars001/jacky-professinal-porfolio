@@ -13,6 +13,8 @@ import { PaviqoCaseStudy } from "@/content/case-studies/paviqo";
 import { ProjectNexusCaseStudy } from "@/content/case-studies/project-nexus";
 import { WeiInSightCaseStudy } from "@/content/case-studies/wei-in-sight";
 import { TVASCaseStudy } from "@/content/case-studies/the-village-art-studio";
+import { NatalieMeCaseStudy } from "@/content/case-studies/natalie-me";
+import { MCPDoctorCaseStudy } from "@/content/case-studies/mcp-doctor";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -78,6 +80,16 @@ export default async function CaseStudyPage(props: Props) {
       problem = "Local artists needed sustained visibility and real-world connection, while audiences needed clear ways to participate.";
       duration = "Live";
       ContentComponent = TVASCaseStudy;
+      break;
+    case "natalie-me":
+      problem = "An artist needed a professional digital home foregrounding her work while enabling autonomous updates without developer reliance.";
+      duration = "Live client project (2026)";
+      ContentComponent = NatalieMeCaseStudy;
+      break;
+    case "mcp-doctor":
+      problem = "MCP configuration and environment failures often look like agent crashes, creating friction and slow debugging cycles.";
+      duration = "Open source (v0.1.0)";
+      ContentComponent = MCPDoctorCaseStudy;
       break;
     default:
       notFound();
