@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  
+  <defs>
+    <style>
+      .bg { fill: #F5F4F0; }
+      .surface { fill: #FFFFFF; stroke: rgba(23, 20, 23, 0.08); stroke-width: 1; rx: 12; }
+      .surface-dark { fill: #171417; rx: 12; }
+      .syne { font-family: 'Syne', sans-serif, system-ui; fill: #171417; font-weight: 700; }
+      .syne-light { font-family: 'Syne', sans-serif, system-ui; fill: #FFFFFF; font-weight: 700; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #4a454e; }
+      .sans-light { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: rgba(255,255,255,0.75); }
+      .mono { font-family: 'Space Mono', SFMono-Regular, Menlo, monospace; fill: #76707a; font-size: 10.5px; letter-spacing: 0.02em; }
+      .mono-light { font-family: 'Space Mono', SFMono-Regular, Menlo, monospace; fill: #a39ea8; font-size: 10.5px; letter-spacing: 0.02em; }
+      .accent-pill { fill: #EBE8E1; rx: 16; }
+      .badge-preview { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 1; rx: 6; }
+      .badge-available { fill: #D1FAE5; stroke: #10B981; stroke-width: 1; rx: 6; }
+      .badge-pilot { fill: #E0E7FF; stroke: #6366F1; stroke-width: 1; rx: 6; }
+      .badge-edge { fill: #EDE9FE; stroke: #8B5CF6; stroke-width: 1; rx: 6; }
+      .connector-line { stroke: rgba(23, 20, 23, 0.15); stroke-width: 1.5; stroke-dasharray: 4 4; fill: none; }
+      .solid-line { stroke: rgba(23, 20, 23, 0.12); stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="700" class="surface-dark" />
+  
+  <!-- Dashboard Top Bar -->
+  <rect x="0" y="0" width="1200" height="60" fill="#1C181C" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+  <circle cx="36" cy="30" r="6" fill="#EF4444" opacity="0.8" />
+  <circle cx="56" cy="30" r="6" fill="#F59E0B" opacity="0.8" />
+  <circle cx="76" cy="30" r="6" fill="#10B981" opacity="0.8" />
+  
+  <text x="110" y="35" class="syne-light" font-size="16">PROJECT NEXUS</text>
+  <text x="250" y="35" class="mono-light" font-size="11">OPERATING ASSISTANT DASHBOARD</text>
+  
+  <!-- Prominent "ACTIVE CLIENT BETA" Stamp -->
+  <rect x="850" y="16" width="290" height="28" class="badge-preview" fill="#FEF3C7" />
+  <text x="872" y="34" class="mono" font-size="10.5" fill="#B45309" font-weight="bold">ACTIVE CLIENT BETA DEPLOYMENT</text>
+  
+  <!-- Left Column: Active Tasks & Human Approvals Queue -->
+  <g transform="translate(40, 85)">
+    <rect width="680" height="570" rx="10" fill="#201C20" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+    
+    <text x="24" y="36" class="syne-light" font-size="16">Live Task Coordination Feed</text>
+    <text x="24" y="56" class="mono-light" font-size="10">Simulated live feed of modular business activities</text>
+    
+    <!-- Item 1: Needs Approval (High prominence) -->
+    <rect x="24" y="78" width="632" height="96" rx="8" fill="#2D2418" stroke="#F59E0B" stroke-width="1.5" />
+    <rect x="36" y="92" width="130" height="20" class="badge-preview" />
+    <text x="44" y="106" class="mono" font-size="9" fill="#B45309" font-weight="bold">NEEDS APPROVAL</text>
+    <text x="180" y="106" class="mono-light" font-size="10">Google Business Review · 2m ago</text>
+    
+    <text x="36" y="132" class="sans-light" font-size="13" font-weight="600">Drafted 5-star review response for customer 'David M.'</text>
+    <text x="36" y="152" class="mono-light" font-size="9.5" fill="#D97706">Action paused at boundary: waiting for owner WhatsApp confirmation</text>
+    
+    <!-- Item 2: Running / In Progress -->
+    <rect x="24" y="188" width="632" height="84" rx="8" fill="#231F23" stroke="rgba(255,255,255,0.06)" />
+    <rect x="36" y="202" width="110" height="20" rx="4" fill="#1E3A5F" />
+    <text x="44" y="216" class="mono" font-size="9" fill="#93C5FD">IN PROGRESS</text>
+    <text x="160" y="216" class="mono-light" font-size="10">Inbound Catering Email · 6m ago</text>
+    <text x="36" y="242" class="sans-light" font-size="12.5">Parsing Monday lunch catering request (35 guests) against kitchen schedule</text>
+    
+    <!-- Item 3: Completed -->
+    <rect x="24" y="286" width="632" height="84" rx="8" fill="#231F23" stroke="rgba(255,255,255,0.06)" />
+    <rect x="36" y="300" width="90" height="20" class="badge-available" />
+    <text x="44" y="314" class="mono" font-size="9" fill="#065F46">COMPLETED</text>
+    <text x="140" y="314" class="mono-light" font-size="10">WhatsApp Customer Inquiry · 14m ago</text>
+    <text x="36" y="340" class="sans-light" font-size="12.5">Answered dietary/allergen question within approved operating policy</text>
+    
+    <!-- Item 4: Safe Fallback -->
+    <rect x="24" y="384" width="632" height="84" rx="8" fill="#231F23" stroke="rgba(255,255,255,0.06)" />
+    <rect x="36" y="398" width="110" height="20" rx="4" fill="#374151" />
+    <text x="44" y="412" class="mono" font-size="9" fill="#D1D5DB">SAFE FALLBACK</text>
+    <text x="160" y="412" class="mono-light" font-size="10">Calendar Sync · 32m ago</text>
+    <text x="36" y="438" class="sans-light" font-size="12.5">Third-party endpoint returned 503; task held in queue without data drop</text>
+    
+    <!-- Bottom note: Wrapped to 2 lines so it never overflows -->
+    <text x="24" y="505" class="mono-light" font-size="9.5" fill="#9CA3AF">All events are illustrative of system telemetry and demonstrate modular coordination.</text>
+    <text x="24" y="525" class="mono-light" font-size="9.5" fill="#9CA3AF">They do not represent audited customer production statistics or claims.</text>
+  </g>
+  
+  <!-- Right Column: System Telemetry & Trust Meters -->
+  <g transform="translate(750, 85)">
+    <rect width="410" height="570" rx="10" fill="#201C20" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+    
+    <text x="24" y="36" class="syne-light" font-size="16">Governance &amp; Controls</text>
+    
+    <!-- Control 1 -->
+    <rect x="24" y="60" width="362" height="96" rx="8" fill="#231F23" stroke="rgba(255,255,255,0.06)" />
+    <text x="40" y="85" class="mono-light" font-size="10" fill="#10B981">APPROVAL RATIO (POLICY ENFORCED)</text>
+    <text x="40" y="112" class="syne-light" font-size="22">100%</text>
+    <text x="100" y="110" class="sans-light" font-size="12">of sensitive actions stopped for review</text>
+    <text x="40" y="136" class="mono-light" font-size="9">Zero unapproved public postings allowed</text>
+    
+    <!-- Control 2 -->
+    <rect x="24" y="170" width="362" height="96" rx="8" fill="#231F23" stroke="rgba(255,255,255,0.06)" />
+    <text x="40" y="195" class="mono-light" font-size="10" fill="#60A5FA">SHARED CONTEXT FRESHNESS</text>
+    <text x="40" y="222" class="syne-light" font-size="22">Verified</text>
+    <text x="120" y="220" class="sans-light" font-size="12">Operating hours &amp; pricing synced</text>
+    <text x="40" y="246" class="mono-light" font-size="9">Last updated: Today via Westside Union</text>
+    
+    <!-- Control 3 -->
+    <rect x="24" y="280" width="362" height="130" rx="8" fill="#231F23" stroke="rgba(255,255,255,0.06)" />
+    <text x="40" y="305" class="mono-light" font-size="10" fill="#FBBF24">CONNECTED CHANNELS</text>
+    <text x="40" y="330" class="sans-light" font-size="12">· WhatsApp Business Gateway (Active)</text>
+    <text x="40" y="352" class="sans-light" font-size="12">· SMS / Inbound Text Relay (Active)</text>
+    <text x="40" y="374" class="sans-light" font-size="12">· Google Business Profile Listener (Active)</text>
+    <text x="40" y="396" class="sans-light" font-size="12">· Square POS Connector (Pilot Testing)</text>
+    
+    <!-- Status summary -->
+    <rect x="24" y="426" width="362" height="106" rx="8" fill="#28221D" stroke="#B45309" />
+    <text x="36" y="450" class="mono" font-size="10" fill="#FBBF24" font-weight="bold">DESIGN STATUS NOTE</text>
+    <text x="36" y="472" class="sans-light" font-size="11" fill="#FEF3C7">Prototype interface &amp; simulated telemetry</text>
+    <text x="36" y="490" class="sans-light" font-size="11" fill="#FEF3C7">for the Nexus managed assistant.</text>
+    <text x="36" y="512" class="mono" font-size="9" fill="#D97706">Proprietary routing logic and customer data redacted.</text>
+  </g>
+</svg>

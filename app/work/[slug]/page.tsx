@@ -67,8 +67,8 @@ export default async function CaseStudyPage(props: Props) {
       ContentComponent = PaviqoCaseStudy;
       break;
     case "project-nexus":
-      problem = "Repetitive business coordination consumed disproportionate owner time, yet existing tools required either significant technical setup or produced disconnected, generic experiences.";
-      duration = "In development (marketing site live)";
+      problem = "Business owners lose hours every evening to repetitive coordination across inboxes and reviews, yet existing tools require complex technical management or produce unvetted, risky automated actions.";
+      duration = "Active Client Beta Deployment";
       ContentComponent = ProjectNexusCaseStudy;
       break;
     case "wei-in-sight":

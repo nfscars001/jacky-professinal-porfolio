@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="100%" height="100%">
+  
+  <defs>
+    <style>
+      .bg { fill: #F5F4F0; }
+      .surface { fill: #FFFFFF; stroke: rgba(23, 20, 23, 0.08); stroke-width: 1; rx: 12; }
+      .surface-dark { fill: #171417; rx: 12; }
+      .syne { font-family: 'Syne', sans-serif, system-ui; fill: #171417; font-weight: 700; }
+      .syne-light { font-family: 'Syne', sans-serif, system-ui; fill: #FFFFFF; font-weight: 700; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #4a454e; }
+      .sans-light { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: rgba(255,255,255,0.75); }
+      .mono { font-family: 'Space Mono', SFMono-Regular, Menlo, monospace; fill: #76707a; font-size: 10.5px; letter-spacing: 0.02em; }
+      .mono-light { font-family: 'Space Mono', SFMono-Regular, Menlo, monospace; fill: #a39ea8; font-size: 10.5px; letter-spacing: 0.02em; }
+      .accent-pill { fill: #EBE8E1; rx: 16; }
+      .badge-preview { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 1; rx: 6; }
+      .badge-available { fill: #D1FAE5; stroke: #10B981; stroke-width: 1; rx: 6; }
+      .badge-pilot { fill: #E0E7FF; stroke: #6366F1; stroke-width: 1; rx: 6; }
+      .badge-edge { fill: #EDE9FE; stroke: #8B5CF6; stroke-width: 1; rx: 6; }
+      .connector-line { stroke: rgba(23, 20, 23, 0.15); stroke-width: 1.5; stroke-dasharray: 4 4; fill: none; }
+      .solid-line { stroke: rgba(23, 20, 23, 0.12); stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="620" class="bg" />
+  
+  <text x="60" y="50" class="mono" font-size="12" fill="#76707a">INTEGRATIONS &amp; MULTI-CHANNEL SURFACE</text>
+  <text x="60" y="84" class="syne" font-size="24">Multi-Channel Ingress &amp; Business Software Connectivity</text>
+  
+  <!-- Left Box: Communication Ingress (w=340) -->
+  <g transform="translate(50, 120)">
+    <rect width="345" height="450" class="surface" />
+    <rect x="20" y="20" width="180" height="24" class="accent-pill" />
+    <text x="28" y="36" class="mono" font-size="10" fill="#171417" font-weight="bold">COMMUNICATION CHANNELS</text>
+    <text x="20" y="75" class="syne" font-size="16">Where Customers Reach Out</text>
+    <text x="20" y="95" class="sans" font-size="12" fill="#666">Connected to business owner's day</text>
+    
+    <!-- Channel 1 -->
+    <rect x="20" y="118" width="305" height="64" rx="8" fill="#F8F7F4" stroke="rgba(23,20,23,0.06)" />
+    <text x="36" y="142" class="sans" font-size="13" font-weight="600">WhatsApp Business</text>
+    <text x="36" y="162" class="mono" font-size="9" fill="#047857">Owner review &amp; customer chat</text>
+    <rect x="235" y="128" width="75" height="22" class="badge-available" />
+    <text x="246" y="143" class="mono" font-size="9" fill="#065F46" font-weight="bold">Available</text>
+    
+    <!-- Channel 2 -->
+    <rect x="20" y="194" width="305" height="64" rx="8" fill="#F8F7F4" stroke="rgba(23,20,23,0.06)" />
+    <text x="36" y="218" class="sans" font-size="13" font-weight="600">SMS / Text Messaging</text>
+    <text x="36" y="238" class="mono" font-size="9" fill="#047857">Inbound leads &amp; rapid alerts</text>
+    <rect x="235" y="204" width="75" height="22" class="badge-available" />
+    <text x="246" y="219" class="mono" font-size="9" fill="#065F46" font-weight="bold">Available</text>
+    
+    <!-- Channel 3 -->
+    <rect x="20" y="270" width="305" height="64" rx="8" fill="#F8F7F4" stroke="rgba(23,20,23,0.06)" />
+    <text x="36" y="294" class="sans" font-size="13" font-weight="600">Business Email</text>
+    <text x="36" y="314" class="mono" font-size="9" fill="#047857">Inquiry parsing &amp; summaries</text>
+    <rect x="235" y="280" width="75" height="22" class="badge-available" />
+    <text x="246" y="295" class="mono" font-size="9" fill="#065F46" font-weight="bold">Available</text>
+    
+    <!-- Channel 4 -->
+    <rect x="20" y="346" width="305" height="64" rx="8" fill="#F8F7F4" stroke="rgba(23,20,23,0.06)" />
+    <text x="36" y="370" class="sans" font-size="13" font-weight="600">Telegram / Web Chat</text>
+    <text x="36" y="390" class="mono" font-size="9" fill="#4B5563">Internal staff &amp; web dispatch</text>
+    <rect x="245" y="356" width="65" height="22" class="badge-pilot" />
+    <text x="260" y="371" class="mono" font-size="9" fill="#4338CA" font-weight="bold">Pilot</text>
+  </g>
+  
+  <!-- Middle Box: Nexus Coordination Core (w=370) -->
+  <g transform="translate(415, 120)">
+    <rect width="370" height="450" class="surface-dark" />
+    <rect x="24" y="20" width="160" height="24" rx="12" fill="#2A262A" />
+    <text x="36" y="36" class="mono-light" font-size="10" fill="#D1D5DB" font-weight="bold">PROJECT NEXUS CORE</text>
+    
+    <text x="24" y="75" class="syne-light" font-size="19">Managed Coordination</text>
+    <text x="24" y="95" class="sans-light" font-size="12">Translates messages into governed actions.</text>
+    
+    <!-- Inner Layers -->
+    <rect x="24" y="118" width="322" height="88" rx="8" fill="#231F23" stroke="rgba(255,255,255,0.08)" />
+    <text x="38" y="142" class="mono-light" font-size="10" fill="#A7F3D0">1. SHARED BUSINESS CONTEXT</text>
+    <text x="38" y="162" class="sans-light" font-size="12" font-weight="600">Operating hours, menus, tone, pricing</text>
+    <text x="38" y="180" class="mono-light" font-size="9">Single truth layer across all workflows</text>
+    
+    <rect x="24" y="218" width="322" height="88" rx="8" fill="#231F23" stroke="rgba(255,255,255,0.08)" />
+    <text x="38" y="242" class="mono-light" font-size="10" fill="#FDE68A">2. POLICY &amp; APPROVAL ENGINE</text>
+    <text x="38" y="262" class="sans-light" font-size="12" font-weight="600">Human-in-the-loop triggers for high stakes</text>
+    <text x="38" y="280" class="mono-light" font-size="9">Explicit scopes prevent runaway actions</text>
+    
+    <rect x="24" y="318" width="322" height="88" rx="8" fill="#231F23" stroke="rgba(255,255,255,0.08)" />
+    <text x="38" y="342" class="mono-light" font-size="10" fill="#DDD6FE">3. ACTIVITY AUDIT &amp; TELEMETRY</text>
+    <text x="38" y="362" class="sans-light" font-size="12" font-weight="600">Reviewable logs, cost limits, safe fallback</text>
+    <text x="38" y="380" class="mono-light" font-size="9">Complete history visible to owner</text>
+  </g>
+  
+  <!-- Right Box: Business Software Tools (w=340) -->
+  <g transform="translate(805, 120)">
+    <rect width="345" height="450" class="surface" />
+    <rect x="20" y="20" width="180" height="24" class="accent-pill" />
+    <text x="28" y="36" class="mono" font-size="10" fill="#171417" font-weight="bold">BUSINESS INTEGRATIONS</text>
+    <text x="20" y="75" class="syne" font-size="16">Tools &amp; Records</text>
+    <text x="20" y="95" class="sans" font-size="12" fill="#666">Verified &amp; connected during setup</text>
+    
+    <!-- Tool 1 -->
+    <rect x="20" y="118" width="305" height="64" rx="8" fill="#F8F7F4" stroke="rgba(23,20,23,0.06)" />
+    <text x="36" y="142" class="sans" font-size="13" font-weight="600">Google Business Profile</text>
+    <text x="36" y="162" class="mono" font-size="9" fill="#047857">Review monitoring &amp; draft replies</text>
+    <rect x="235" y="128" width="75" height="22" class="badge-available" />
+    <text x="246" y="143" class="mono" font-size="9" fill="#065F46" font-weight="bold">Available</text>
+    
+    <!-- Tool 2 -->
+    <rect x="20" y="194" width="305" height="64" rx="8" fill="#F8F7F4" stroke="rgba(23,20,23,0.06)" />
+    <text x="36" y="218" class="sans" font-size="13" font-weight="600">Calendar &amp; Booking</text>
+    <text x="36" y="238" class="mono" font-size="9" fill="#047857">Availability &amp; hold coordination</text>
+    <rect x="235" y="204" width="75" height="22" class="badge-available" />
+    <text x="246" y="219" class="mono" font-size="9" fill="#065F46" font-weight="bold">Available</text>
+    
+    <!-- Tool 3 -->
+    <rect x="20" y="270" width="305" height="64" rx="8" fill="#F8F7F4" stroke="rgba(23,20,23,0.06)" />
+    <text x="36" y="294" class="sans" font-size="13" font-weight="600">Square / Clover POS</text>
+    <text x="36" y="314" class="mono" font-size="9" fill="#4B5563">Menu item status &amp; hours sync</text>
+    <rect x="245" y="280" width="65" height="22" class="badge-pilot" />
+    <text x="260" y="295" class="mono" font-size="9" fill="#4338CA" font-weight="bold">Pilot</text>
+    
+    <!-- Tool 4 -->
+    <rect x="20" y="346" width="305" height="64" rx="8" fill="#F8F7F4" stroke="rgba(23,20,23,0.06)" />
+    <text x="36" y="370" class="sans" font-size="13" font-weight="600">Custom CRM &amp; Database</text>
+    <text x="36" y="390" class="mono" font-size="9" fill="#4B5563">Enterprise &amp; dealer connectors</text>
+    <rect x="225" y="356" width="85" height="22" rx="6" fill="#F3F4F6" stroke="#9CA3AF" />
+    <text x="233" y="371" class="mono" font-size="9" fill="#4B5563" font-weight="bold">Enterprise</text>
+  </g>
+</svg>

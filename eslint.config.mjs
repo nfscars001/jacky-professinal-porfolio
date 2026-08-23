@@ -16,6 +16,7 @@ const eslintConfig = defineConfig([
     "references/**",
     "private-references/**",
     "generate-case-study-assets.js",
+    "generate-nexus-assets.js",
     "generate-svgs.js",
     "crop.js",
   ]),

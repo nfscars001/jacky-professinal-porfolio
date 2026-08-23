@@ -201,19 +201,19 @@ export const projects: Project[] = [
     shortTitle: "Nexus",
     // TODO(content): Jacky to review and approve this summary
     summary:
-      "A modular AI framework system designed to coordinate specialized capabilities, shared business context, permissions, approvals, and safe fallback behind one consistent user experience. The live marketing site is in production; the underlying framework remains in development.",
+      "A modular AI framework system evolved into a configurable, messaging-first managed assistant for business owners. Currently in active beta deployment with business clients, coordinating specialized capabilities, shared business context, human approvals, and safe fallback behind familiar channels like WhatsApp, SMS, and email.",
     cardStatement:
-      "One coherent business experience over interchangeable AI capabilities—designed for modularity, transparency, and trust.",
-    year: "Launch since July 2026",
-    status: "in-development",
+      "A modular AI framework evolved into a messaging-first managed assistant—coordinating specialized capabilities, business context, human approvals, and safe fallback.",
+    year: "Active Beta · 2026",
+    status: "live",
     featured: true,
     featuredOrder: 1, // Lead card in Selected Work (full-width on desktop)
     categories: ["ai-automation", "digital-products"],
     capabilities: [
       "AI Product Strategy",
-      "System Architecture",
+      "Systems Architecture",
       "Experience Design",
-      "Creative Direction",
+      "Managed Service UX",
     ],
     // TODO(content): Jacky to confirm exact role titles and collaborators
     roles: ["Founder", "Product Strategy", "System Architecture", "Experience Design", "Creative Direction"],
@@ -229,9 +229,9 @@ export const projects: Project[] = [
     liveUrl: "https://nexus.westside-union.com",
     caseStudyPath: "/work/project-nexus",
     seo: {
-      title: "Project Nexus — Modular AI Framework System",
+      title: "Project Nexus — Modular AI Framework System | Jacky Ho",
       description:
-        "How Jacky designed one coherent business-facing experience over interchangeable AI capabilities—with modularity, shared context, human approvals, and safe fallback as core principles.",
+        "How Jacky designed Project Nexus: a modular AI framework evolved into a messaging-first managed assistant in active beta with human approvals.",
       image: "/images/projects/nexus_ai/nexus_cover.png",
     },
   },

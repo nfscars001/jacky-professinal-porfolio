@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="100%" height="100%">
+  
+  <defs>
+    <style>
+      .bg { fill: #F5F4F0; }
+      .surface { fill: #FFFFFF; stroke: rgba(23, 20, 23, 0.08); stroke-width: 1; rx: 12; }
+      .surface-dark { fill: #171417; rx: 12; }
+      .syne { font-family: 'Syne', sans-serif, system-ui; fill: #171417; font-weight: 700; }
+      .syne-light { font-family: 'Syne', sans-serif, system-ui; fill: #FFFFFF; font-weight: 700; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #4a454e; }
+      .sans-light { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: rgba(255,255,255,0.75); }
+      .mono { font-family: 'Space Mono', SFMono-Regular, Menlo, monospace; fill: #76707a; font-size: 10.5px; letter-spacing: 0.02em; }
+      .mono-light { font-family: 'Space Mono', SFMono-Regular, Menlo, monospace; fill: #a39ea8; font-size: 10.5px; letter-spacing: 0.02em; }
+      .accent-pill { fill: #EBE8E1; rx: 16; }
+      .badge-preview { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 1; rx: 6; }
+      .badge-available { fill: #D1FAE5; stroke: #10B981; stroke-width: 1; rx: 6; }
+      .badge-pilot { fill: #E0E7FF; stroke: #6366F1; stroke-width: 1; rx: 6; }
+      .badge-edge { fill: #EDE9FE; stroke: #8B5CF6; stroke-width: 1; rx: 6; }
+      .connector-line { stroke: rgba(23, 20, 23, 0.15); stroke-width: 1.5; stroke-dasharray: 4 4; fill: none; }
+      .solid-line { stroke: rgba(23, 20, 23, 0.12); stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="520" class="bg" />
+  
+  <text x="60" y="50" class="mono" font-size="12" fill="#76707a">DEPLOYMENT &amp; DELIVERY ARCHITECTURE</text>
+  <text x="60" y="84" class="syne" font-size="24">Nexus Delivery Models: Cloud, Edge, and Enterprise</text>
+  
+  <!-- Tier 1: Cloud (x=50, w=345) -->
+  <g transform="translate(50, 120)">
+    <rect width="345" height="360" class="surface" />
+    <rect x="20" y="20" width="120" height="24" class="accent-pill" />
+    <text x="30" y="36" class="mono" font-size="10" fill="#171417" font-weight="bold">NEXUS CLOUD</text>
+    
+    <text x="20" y="75" class="syne" font-size="18">Managed Cloud</text>
+    <text x="20" y="98" class="sans" font-size="12" fill="#666">Standard managed delivery for local</text>
+    <text x="20" y="116" class="sans" font-size="12" fill="#666">businesses and independent operators.</text>
+    
+    <line x1="20" y1="138" x2="325" y2="138" class="solid-line" />
+    
+    <text x="20" y="164" class="mono" font-size="10" fill="#76707a">KEY CHARACTERISTICS</text>
+    <text x="20" y="188" class="sans" font-size="12" font-weight="600">· Fully hosted &amp; monitored by Westside Union</text>
+    <text x="20" y="210" class="sans" font-size="12" font-weight="600">· WhatsApp, SMS, and email connectors</text>
+    <text x="20" y="232" class="sans" font-size="12" font-weight="600">· Predictable monthly tier with usage limits</text>
+    <text x="20" y="254" class="sans" font-size="12" font-weight="600">· Zero client infrastructure or maintenance</text>
+    
+    <rect x="20" y="290" width="305" height="34" rx="6" fill="#F3F4F6" />
+    <text x="30" y="311" class="mono" font-size="9" fill="#4B5563">Target: Cafes, Salons, Restaurants, Trades</text>
+  </g>
+  
+  <!-- Tier 2: Edge (x=425, w=345) -->
+  <g transform="translate(425, 120)">
+    <rect width="345" height="360" class="surface" stroke="#8B5CF6" stroke-width="1.5" />
+    <rect x="20" y="20" width="110" height="24" class="badge-edge" />
+    <text x="30" y="36" class="mono" font-size="10" fill="#6D28D9" font-weight="bold">NEXUS EDGE</text>
+    
+    <text x="20" y="75" class="syne" font-size="18" fill="#5B21B6">On-Premise Hardware</text>
+    <text x="20" y="98" class="sans" font-size="12" fill="#666">Dedicated local hardware appliance for</text>
+    <text x="20" y="116" class="sans" font-size="12" fill="#666">maximum privacy &amp; fixed local capacity.</text>
+    
+    <line x1="20" y1="138" x2="325" y2="138" stroke="#DDD6FE" class="solid-line" />
+    
+    <text x="20" y="164" class="mono" font-size="10" fill="#6D28D9">KEY CHARACTERISTICS</text>
+    <text x="20" y="188" class="sans" font-size="12" font-weight="600">· On-premise data residency &amp; local processing</text>
+    <text x="20" y="210" class="sans" font-size="12" font-weight="600">· Dedicated execution without per-token fees</text>
+    <text x="20" y="232" class="sans" font-size="12" font-weight="600">· Customer data never used for public training</text>
+    <text x="20" y="254" class="sans" font-size="12" font-weight="600">· Managed software updates via secure tunnel</text>
+    
+    <rect x="20" y="290" width="305" height="34" rx="6" fill="#F5F3FF" />
+    <text x="30" y="311" class="mono" font-size="9" fill="#6D28D9">Target: Legal, Medical, Finance, Privacy</text>
+  </g>
+  
+  <!-- Tier 3: Enterprise (x=805, w=345) -->
+  <g transform="translate(805, 120)">
+    <rect width="345" height="360" class="surface" />
+    <rect x="20" y="20" width="150" height="24" class="accent-pill" />
+    <text x="30" y="36" class="mono" font-size="10" fill="#171417" font-weight="bold">NEXUS ENTERPRISE</text>
+    
+    <text x="20" y="75" class="syne" font-size="18">Multi-Location &amp; Custom</text>
+    <text x="20" y="98" class="sans" font-size="12" fill="#666">Custom deployments spanning multiple</text>
+    <text x="20" y="116" class="sans" font-size="12" fill="#666">locations, roles, and bespoke databases.</text>
+    
+    <line x1="20" y1="138" x2="325" y2="138" class="solid-line" />
+    
+    <text x="20" y="164" class="mono" font-size="10" fill="#76707a">KEY CHARACTERISTICS</text>
+    <text x="20" y="188" class="sans" font-size="12" font-weight="600">· Multi-store / multi-location role routing</text>
+    <text x="20" y="210" class="sans" font-size="12" font-weight="600">· Custom CRM, ERP &amp; database integrations</text>
+    <text x="20" y="232" class="sans" font-size="12" font-weight="600">· Advanced approval chains &amp; staff permissions</text>
+    <text x="20" y="254" class="sans" font-size="12" font-weight="600">· Tailored SLA &amp; dedicated workflow engineer</text>
+    
+    <rect x="20" y="290" width="305" height="34" rx="6" fill="#F3F4F6" />
+    <text x="30" y="311" class="mono" font-size="9" fill="#4B5563">Target: Dealerships, Franchises, Multi-Unit</text>
+  </g>
+</svg>
