@@ -98,7 +98,7 @@ export function CaseStudyHero({ project }: CaseStudyHeroProps) {
           style={{
             position: "relative",
             width: "100%",
-            aspectRatio: "16 / 9",
+            aspectRatio: `${project.heroImage.width} / ${project.heroImage.height}`,
             borderRadius: "var(--radius-lg)",
             overflow: "hidden",
             backgroundColor: "var(--color-canvas)",
@@ -110,7 +110,7 @@ export function CaseStudyHero({ project }: CaseStudyHeroProps) {
             alt={project.heroImage.alt}
             fill
             sizes="100vw"
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "contain" }}
             priority // Hero image is prioritized for LCP
           />
         </div>

@@ -59,7 +59,7 @@ export function MediaFigure({
               ? "(max-width: 1200px) 100vw, 1200px"
               : "100vw"
           }
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "contain" }}
           priority={priority}
         />
       </div>

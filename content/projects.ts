@@ -221,8 +221,8 @@ export const projects: Project[] = [
     heroImage: {
       src: "/images/projects/nexus_ai/nexus_cover.png",
       alt: "Project Nexus marketing site hero: large editorial headline 'Your business runs, even when you sleep.' on an off-white background with iridescent geometric forms",
-      width: 1440,
-      height: 900,
+      width: 2940,
+      height: 1621,
       provenance: "original",
       disclosure: "Live public marketing interface, captured in 2026.",
     },

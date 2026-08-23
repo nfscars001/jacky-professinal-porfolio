@@ -101,8 +101,8 @@ export function ProjectNexusCaseStudy() {
       <MediaFigure
         src="/images/projects/nexus_ai/nexus_cover.png"
         alt="Project Nexus live marketing site hero interface: editorial headline 'Your business runs, even when you sleep.' on an off-white background with iridescent geometric forms"
-        width={1440}
-        height={900}
+        width={2940}
+        height={1621}
         layout="full"
         caption="The live Project Nexus marketing experience. Product positioning leads with business outcomes and daily reality rather than technical abstractions."
         disclosure="Live public marketing interface, captured in 2026. Designed by Jacky Ho / Westside Union."
@@ -268,8 +268,8 @@ export function ProjectNexusCaseStudy() {
       <MediaFigure
         src="/images/projects/nexus_ai/nexus-how-it-works.png"
         alt="How It Works section of the live Project Nexus marketing site illustrating the three-step managed onboarding journey"
-        width={1440}
-        height={900}
+        width={2940}
+        height={1620}
         layout="full"
         caption="Public Landing Page: The 3-step managed onboarding narrative communicating clear outcomes and transparent partnership."
         disclosure="Live public marketing interface, captured in 2026."
@@ -430,8 +430,8 @@ export function ProjectNexusCaseStudy() {
       <MediaFigure
         src="/images/projects/nexus_ai/nexus-trust-section.png"
         alt="Trust and governance section of the Project Nexus website detailing data ownership, human approvals, and predictable monthly costs"
-        width={1440}
-        height={900}
+        width={2940}
+        height={1623}
         layout="full"
         caption="Trust & Governance Section: Transparent commitments explaining data ownership, approval boundaries, and managed maintenance."
         disclosure="Live public marketing interface, captured in 2026."
