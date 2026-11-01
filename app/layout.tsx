@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Space_Mono, Syne } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { SkipLink } from "@/components/layout/skip-link";
 import { SiteHeader } from "@/components/layout/site-header";
